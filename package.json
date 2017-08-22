@@ -1,0 +1,19 @@
+{
+  "name": "clayss",
+  "version": "1.0.0",
+  "description": "Clay CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddyess/clayss.git"
+  },
+  "author": "David L. Dyess II",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daviddyess/clayss/issues"
+  },
+  "homepage": "https://github.com/daviddyess/clayss#readme"
+}
