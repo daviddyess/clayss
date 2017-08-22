@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/daviddyess/clayss/issues"
   },
-  "homepage": "https://github.com/daviddyess/clayss#readme"
+  "homepage": "https://github.com/daviddyess/clayss#readme",
+  "dependencies": {
+    "iotacss": "^1.2.0"
+  }
 }
