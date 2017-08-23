@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "iotacss-components-modal@^1.0.3",
+        "scope": null,
+        "escapedName": "iotacss-components-modal",
+        "name": "iotacss-components-modal",
+        "rawSpec": "^1.0.3",
+        "spec": ">=1.0.3 <2.0.0",
+        "type": "range"
+      },
+      "/home/david/Dev/iotacss"
+    ]
+  ],
+  "_from": "iotacss-components-modal@>=1.0.3 <2.0.0",
+  "_id": "iotacss-components-modal@1.0.3",
+  "_inCache": true,
+  "_location": "/iotacss-components-modal",
+  "_nodeVersion": "4.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/iotacss-components-modal-1.0.3.tgz_1494707297392_0.0235923461150378"
+  },
+  "_npmUser": {
+    "name": "iotacss",
+    "email": "iotacss@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "iotacss-components-modal@^1.0.3",
+    "scope": null,
+    "escapedName": "iotacss-components-modal",
+    "name": "iotacss-components-modal",
+    "rawSpec": "^1.0.3",
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iotacss-components-modal/-/iotacss-components-modal-1.0.3.tgz",
+  "_shasum": "800d9c58b4414417c2fb3335b2d49d7775928dc8",
+  "_shrinkwrap": null,
+  "_spec": "iotacss-components-modal@^1.0.3",
+  "_where": "/home/david/Dev/iotacss",
+  "author": {
+    "name": "Dimitris Psaropoulos",
+    "email": "info@harby.me"
+  },
+  "bugs": {
+    "url": "https://github.com/iotacss/components.modal/issues"
+  },
+  "dependencies": {},
+  "description": "Modal component for iotaCSS",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "800d9c58b4414417c2fb3335b2d49d7775928dc8",
+    "tarball": "https://registry.npmjs.org/iotacss-components-modal/-/iotacss-components-modal-1.0.3.tgz"
+  },
+  "gitHead": "f492b1adf70874efb29f36a26d614e39cb8dd214",
+  "homepage": "https://github.com/iotacss/components.modal#readme",
+  "keywords": [
+    "iotacss",
+    "css",
+    "sass",
+    "bem",
+    "oocss"
+  ],
+  "main": "_components.modal.scss",
+  "maintainers": [
+    {
+      "name": "iotacss",
+      "email": "iotacss@gmail.com"
+    }
+  ],
+  "name": "iotacss-components-modal",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iotacss/components.modal.git"
+  },
+  "scripts": {},
+  "version": "1.0.3"
+}
