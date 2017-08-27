@@ -1,4 +1,5 @@
 @import 'settings/core';
+@import 'settings/colors';
 
 @import 'tools/core';
 @import 'tools/breakpoint';
@@ -13,6 +14,9 @@
 @import 'objects/list';
 @import 'objects/media';
 @import 'objects/type';
+
+@import 'components/button';
+@import 'components/modal';
 
 @import 'utilities/align';
 @import 'utilities/bgcolor';
