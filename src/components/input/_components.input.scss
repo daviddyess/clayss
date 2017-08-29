@@ -1,0 +1,35 @@
+// Input Component
+
+// Options
+
+$iota-components-input            : true;
+
+$iota-components-input-namespace  : 'input' !default;
+
+$iota-components-input-color      : buttontext !default; // rgb(255, 255, 255) !default;
+$iota-components-input-margin     : 0 !default;
+$iota-components-input-padding    : 4px 6px !default;
+$iota-components-input-border     : 1px outset buttonface !default; //none !default;
+$iota-components-input-background : buttonface !default; //rgb(57, 178, 255) !default;
+$iota-components-input-border-radius: 3px !default;
+$iota-components-input-shadow     : none !default;
+
+// Helper Local Variables
+
+$iota-components-input-var-input: $iota-global-components-namespace + $iota-components-input-namespace;
+
+// Input Component
+.#{$iota-components-input-var-input}{
+  display: inline-block;
+  @include _iota-generate-unit('margin', null, $iota-components-input-margin);
+  @include _iota-generate-unit('padding', null, $iota-components-input-padding);
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  font-weight: initial;
+  letter-spacing: inherit;
+  border-radius: $iota-components-input-border-radius;
+  border: $iota-components-input-border;
+  box-shadow: $iota-components-input-shadow;
+  color: $iota-components-input-color;
+  background: $iota-components-input-background;
+}

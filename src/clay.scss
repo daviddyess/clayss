@@ -1,5 +1,6 @@
 @import 'settings/core';
 @import 'settings/colors';
+@import 'settings/type';
 
 @import 'tools/core';
 @import 'tools/breakpoint';
@@ -16,6 +17,7 @@
 @import 'objects/type';
 
 @import 'components/button';
+@import 'components/input';
 @import 'components/modal';
 
 @import 'utilities/align';

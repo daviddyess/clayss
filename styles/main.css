@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 /**
  * Grid columns. This setting is shared between
  * iotaCSS grid objects and size, pull & push
@@ -58,6 +57,10 @@
  *
  * Type: String
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+body {
+  font-family: "Roboto Slab", serif; }
+
 /**
  * The base value the scale starts at.
  *
@@ -475,31 +478,41 @@ a {
  */
 .c-button {
   display: inline-block;
+  margin: 0;
   font: inherit;
-  color: #fff;
+  -webkit-font-smoothing: inherit;
+  font-weight: initial;
+  letter-spacing: inherit;
+  border-radius: 3px;
+  border: 1px outset buttonface;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;
-  border: none;
   text-decoration: none;
-  background: #0000FA; }
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  color: buttontext;
+  background: buttonface; }
 
 .c-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  transition: all 0.3s;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
-
-.c-button:hover {
-  transform: translateY(-1px); }
-
-.c-button:active {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25); }
+  font-family: "Roboto Slab", serif; }
 
 .c-button--primary {
-  background-color: #0000FA; }
+  background-color: #fff; }
+
+.c-input {
+  display: inline-block;
+  margin: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  font-weight: initial;
+  letter-spacing: inherit;
+  border-radius: 3px;
+  border: 1px outset buttonface;
+  box-shadow: none;
+  color: buttontext;
+  background: buttonface; }
 
 .is-modal-open {
   position: fixed;
@@ -922,6 +935,9 @@ a {
 .u-static {
   position: static !important; }
 
+.u-sticky {
+  position: sticky !important; }
+
 @media screen and (min-width: 768px) {
   .u-absolute\@sm {
     position: absolute !important; }
@@ -930,7 +946,9 @@ a {
   .u-relative\@sm {
     position: relative !important; }
   .u-static\@sm {
-    position: static !important; } }
+    position: static !important; }
+  .u-sticky\@sm {
+    position: sticky !important; } }
 
 @media screen and (min-width: 1000px) {
   .u-absolute\@md {
@@ -940,7 +958,9 @@ a {
   .u-relative\@md {
     position: relative !important; }
   .u-static\@md {
-    position: static !important; } }
+    position: static !important; }
+  .u-sticky\@md {
+    position: sticky !important; } }
 
 /**
  * Namespace classes

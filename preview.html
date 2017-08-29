@@ -174,7 +174,7 @@
 	
 	<div class="field">
 		<label for="file-input-1">File Input:</label><br/>
-		<input type="file" id="file-input-1" name="file-input-1"/>
+		<input type="file" id="file-input-1" name="file-input-1" />
 	</div>
 	
 	<div class="field">
@@ -184,11 +184,19 @@
 	
 	<div class="field">
 		<label>Buttons:</label><br/>
-		<input type="submit" value="Submit" class="c-button" />
-		<input type="reset" value="Reset"/>
-		<input type="button" value="Button"/>
-		<button>Button Element</button>
+		<input type="submit" value="Button" class="c-button" />
+		<button class="c-button c-button--primary">Primary</button>
+		<input type="reset" value="Reset"  class="c-button" />
+		<input type="button" value="Button"  class="c-button" />
+		<button class="c-button">Button Element</button>
 	</div>
+
+	<fieldset class="c-fieldset">
+		<legend>Fieldset</legend>
+		<label>Input</label>
+		<input type="text" name="test" class="c-input" />
+		<input type="button" value="Submit" class="c-button" />
+	</fieldset>
 			
 </form>
 
