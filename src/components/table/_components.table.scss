@@ -1,0 +1,21 @@
+// Table Component
+
+// Options
+
+$iota-components-table                   : true;
+
+$iota-components-table-namespace         : 'table' !default;
+
+$iota-components-table-padding           : $iota-global-gutter-default !default;
+$iota-components-table-background        : rgba(0, 0, 0, 0.5) !default;
+
+// Helper Local Variables
+
+$iota-components-table-var-table         : $iota-global-components-namespace + $iota-components-table-namespace;
+
+// Table Component
+
+.#{$iota-components-table-var-table} {
+
+  background: $iota-components-table-background;
+}

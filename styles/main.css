@@ -57,9 +57,9 @@
  *
  * Type: String
  */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans:400italic,700italic,400,700);
 body {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Open Sans", san-serif; }
 
 /**
  * The base value the scale starts at.
@@ -496,10 +496,19 @@ a {
   background: buttonface; }
 
 .c-button {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Open Sans", san-serif; }
 
 .c-button--primary {
   background-color: #fff; }
+
+.c-fieldset {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5); }
+
+.c-fieldset legend {
+  padding: 10px;
+  border: 2px solid #D2D2D2;
+  background: rgba(255, 255, 255, 0.5); }
 
 .c-input {
   display: inline-block;
@@ -559,6 +568,9 @@ a {
   transform: translate3d(0, 0, 0);
   text-size-adjust: 100%;
   box-sizing: border-box; }
+
+.c-table {
+  background: rgba(0, 0, 0, 0.5); }
 
 /**
  * Enable / Disable breakpoint specific classes

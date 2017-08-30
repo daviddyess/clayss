@@ -1,0 +1,34 @@
+// Fieldset Component
+
+
+
+
+// Options
+
+$iota-components-fieldset                   : true;
+
+$iota-components-fieldset-namespace         : 'fieldset' !default;
+$iota-components-fieldset-padding           : $iota-global-gutter-default !default;
+$iota-components-fieldset-border            : 2px solid #D2D2D2 !default;
+$iota-components-fieldset-background        : rgba(255, 255, 255, 0.50) !default;
+
+$iota-components-fieldset-legend-padding     : $iota-components-fieldset-padding !default;
+$iota-components-fieldset-legend-border     : $iota-components-fieldset-border !default;
+$iota-components-fieldset-legend-background : $iota-components-fieldset-background !default;
+
+// Helper Local Variables
+
+$iota-components-fieldset-var-fieldset         : $iota-global-components-namespace + $iota-components-fieldset-namespace;
+
+// Fieldset Component
+
+.#{$iota-components-fieldset-var-fieldset} {
+  padding: $iota-components-fieldset-padding;
+  background: $iota-components-fieldset-background;
+}
+
+.#{$iota-components-fieldset-var-fieldset} legend {
+  padding: $iota-components-fieldset-legend-padding;
+  border: $iota-components-fieldset-legend-border;
+  background: $iota-components-fieldset-legend-background;
+}
