@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/daviddyess/clayss#readme",
   "dependencies": {
-    "iotacss": "^1.3.0"
+    "iotacss": "^1.3.1"
   }
 }
