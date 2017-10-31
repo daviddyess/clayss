@@ -10,11 +10,14 @@ $iota-components-fieldset                   : true;
 $iota-components-fieldset-namespace         : 'fieldset' !default;
 $iota-components-fieldset-padding           : $iota-global-gutter-default !default;
 $iota-components-fieldset-border            : 2px solid #D2D2D2 !default;
+$iota-components-fieldset-border-radius     : 5px !default;
 $iota-components-fieldset-background        : rgba(255, 255, 255, 0.50) !default;
+$iota-components-fieldset-margin            : 5px;
 
-$iota-components-fieldset-legend-padding     : $iota-components-fieldset-padding !default;
-$iota-components-fieldset-legend-border     : $iota-components-fieldset-border !default;
-$iota-components-fieldset-legend-background : $iota-components-fieldset-background !default;
+$iota-components-fieldset-legend-padding       : $iota-components-fieldset-padding !default;
+$iota-components-fieldset-legend-border        : $iota-components-fieldset-border !default;
+$iota-components-fieldset-legend-background    : $iota-components-fieldset-background !default;
+$iota-components-fieldset-legend-border-radius : 10px !default;
 
 // Helper Local Variables
 
@@ -25,10 +28,14 @@ $iota-components-fieldset-var-fieldset         : $iota-global-components-namespa
 .#{$iota-components-fieldset-var-fieldset} {
   padding: $iota-components-fieldset-padding;
   background: $iota-components-fieldset-background;
+  border: $iota-components-fieldset-border;
+  border-radius: $iota-components-fieldset-border-radius;
+  margin: $iota-components-fieldset-margin;
 }
 
 .#{$iota-components-fieldset-var-fieldset} legend {
   padding: $iota-components-fieldset-legend-padding;
   border: $iota-components-fieldset-legend-border;
   background: $iota-components-fieldset-legend-background;
+  border-radius: $iota-components-fieldset-border-radius;
 }

@@ -1,0 +1,77 @@
+// Navbar Component
+
+// Options
+
+$iota-components-navbar            : true;
+
+$iota-components-navbar-namespace  : 'navbar' !default;
+
+$iota-components-navbar-color      : buttontext !default;
+$iota-components-navbar-margin     : 0 !default;
+$iota-components-navbar-padding    : 4px 6px !default;
+$iota-components-navbar-border     : 1px outset buttonface !default;
+$iota-components-navbar-background : buttonface !default;
+$iota-components-navbar-border-radius: 3px !default;
+$iota-components-navbar-shadow     : 0 2px 4px 0 rgba(0,0,0,0.15) !default;
+
+// Helper Local Variables
+
+$iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-components-navbar-namespace;
+
+.#{$iota-components-navbar-var-navbar}{
+  width: 100%;
+  background: #eee;
+  display:flex;  
+  flex-direction:column;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.#{$iota-components-navbar-var-navbar}__menu {
+  margin:0;
+  padding: 0 10px;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.#{$iota-components-navbar-var-navbar}__brand {
+  padding: 10px;
+  margin: 0;
+  list-style-type:none;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display:flex;
+  }
+  a:hover {
+    color: gray;
+  }
+}
+
+.#{$iota-components-navbar-var-navbar}__item {
+  margin: 0;
+  display:block;
+  list-style-type:none;
+  a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    margin:0;
+    display: block;
+  }
+  a:hover {
+    background-color: rgb(192, 188, 188);
+  }
+}
+
+.#{$iota-components-navbar-var-navbar}__subitem {
+  margin: 0;
+  position: absolute;
+  display: none;
+}
+
+.#{$iota-components-navbar-var-navbar}__item:hover .#{$iota-components-navbar-var-navbar}__subitem {
+  display: block;
+}

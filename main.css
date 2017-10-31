@@ -585,6 +585,99 @@ a {
 .c-table--striped tbody tr:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.192); }
 
+.c-card {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font: inherit;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #000;
+  background: rgba(255, 255, 255, 0.781); }
+
+.c-card__title {
+  font-weight: 700;
+  color: #000;
+  background: rgba(255, 255, 255, 0.781); }
+
+.c-card__title--flare-right {
+  border-radius: 0 0 6px 0;
+  border: 1px solid #a9b6ff;
+  background: #a9b6ff;
+  padding: 4px; }
+
+.c-card__title--flare-left {
+  border-radius: 0 0 0 6px;
+  border: 1px solid #a9b6ff;
+  background: #a9b6ff;
+  padding: 4px; }
+
+.c-card__title--bar {
+  background: #a9b6ff;
+  margin: 2px 0;
+  padding: 7px; }
+
+.c-card__content {
+  font-weight: inherit;
+  background: rgba(255, 255, 255, 0.781);
+  padding: 7px; }
+
+.c-card__header {
+  /* */ }
+
+.c-card__footer {
+  /* */ }
+
+.c-navbar {
+  width: 100%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2); }
+
+.c-navbar__menu {
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row wrap; }
+
+.c-navbar__brand {
+  padding: 10px;
+  margin: 0;
+  list-style-type: none; }
+  .c-navbar__brand a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: flex; }
+  .c-navbar__brand a:hover {
+    color: gray; }
+
+.c-navbar__item {
+  margin: 0;
+  display: block;
+  list-style-type: none; }
+  .c-navbar__item a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    margin: 0;
+    display: block; }
+  .c-navbar__item a:hover {
+    background-color: #c0bcbc; }
+
+.c-navbar__subitem {
+  margin: 0;
+  position: absolute;
+  display: none; }
+
+.c-navbar__item:hover .c-navbar__subitem {
+  display: block; }
+
 /**
  * Enable / Disable breakpoint specific classes
  *
@@ -631,6 +724,21 @@ a {
     vertical-align: middle !important; }
   .u-align-baseline\@md {
     vertical-align: baseline !important; } }
+
+.u-ai-start {
+  align-items: flex-start !important; }
+
+.u-ai-end {
+  align-items: flex-end !important; }
+
+.u-ai-center {
+  align-items: center !important; }
+
+.u-ai-stretch {
+  align-items: stretch !important; }
+
+.u-ai-baseline {
+  align-items: baseline !important; }
 
 /**
  * Background color names
@@ -750,6 +858,21 @@ a {
     float: left !important; }
   .u-float-right\@md {
     float: right !important; } }
+
+.u-jc-start {
+  justify-content: flex-start !important; }
+
+.u-jc-end {
+  justify-content: flex-end !important; }
+
+.u-jc-center {
+  justify-content: center !important; }
+
+.u-jc-between {
+  justify-content: space-between !important; }
+
+.u-jc-around {
+  justify-content: space-around !important; }
 
 /**
  * Margin default gutter. Use a number for a simple size
@@ -1022,6 +1145,27 @@ a {
 .u-pull-2\/3 {
   margin-right: 66.66667% !important; }
 
+.u-pull-1\/4 {
+  margin-right: 25% !important; }
+
+.u-pull-2\/4 {
+  margin-right: 50% !important; }
+
+.u-pull-3\/4 {
+  margin-right: 75% !important; }
+
+.u-pull-1\/5 {
+  margin-right: 20% !important; }
+
+.u-pull-2\/5 {
+  margin-right: 40% !important; }
+
+.u-pull-3\/5 {
+  margin-right: 60% !important; }
+
+.u-pull-4\/5 {
+  margin-right: 80% !important; }
+
 .u-pull-1\/6 {
   margin-right: 16.66667% !important; }
 
@@ -1047,6 +1191,20 @@ a {
     margin-right: 33.33333% !important; }
   .u-pull-2\/3\@sm {
     margin-right: 66.66667% !important; }
+  .u-pull-1\/4\@sm {
+    margin-right: 25% !important; }
+  .u-pull-2\/4\@sm {
+    margin-right: 50% !important; }
+  .u-pull-3\/4\@sm {
+    margin-right: 75% !important; }
+  .u-pull-1\/5\@sm {
+    margin-right: 20% !important; }
+  .u-pull-2\/5\@sm {
+    margin-right: 40% !important; }
+  .u-pull-3\/5\@sm {
+    margin-right: 60% !important; }
+  .u-pull-4\/5\@sm {
+    margin-right: 80% !important; }
   .u-pull-1\/6\@sm {
     margin-right: 16.66667% !important; }
   .u-pull-2\/6\@sm {
@@ -1067,6 +1225,20 @@ a {
     margin-right: 33.33333% !important; }
   .u-pull-2\/3\@md {
     margin-right: 66.66667% !important; }
+  .u-pull-1\/4\@md {
+    margin-right: 25% !important; }
+  .u-pull-2\/4\@md {
+    margin-right: 50% !important; }
+  .u-pull-3\/4\@md {
+    margin-right: 75% !important; }
+  .u-pull-1\/5\@md {
+    margin-right: 20% !important; }
+  .u-pull-2\/5\@md {
+    margin-right: 40% !important; }
+  .u-pull-3\/5\@md {
+    margin-right: 60% !important; }
+  .u-pull-4\/5\@md {
+    margin-right: 80% !important; }
   .u-pull-1\/6\@md {
     margin-right: 16.66667% !important; }
   .u-pull-2\/6\@md {
@@ -1115,6 +1287,27 @@ a {
 .u-push-2\/3 {
   margin-left: 66.66667% !important; }
 
+.u-push-1\/4 {
+  margin-left: 25% !important; }
+
+.u-push-2\/4 {
+  margin-left: 50% !important; }
+
+.u-push-3\/4 {
+  margin-left: 75% !important; }
+
+.u-push-1\/5 {
+  margin-left: 20% !important; }
+
+.u-push-2\/5 {
+  margin-left: 40% !important; }
+
+.u-push-3\/5 {
+  margin-left: 60% !important; }
+
+.u-push-4\/5 {
+  margin-left: 80% !important; }
+
 .u-push-1\/6 {
   margin-left: 16.66667% !important; }
 
@@ -1140,6 +1333,20 @@ a {
     margin-left: 33.33333% !important; }
   .u-push-2\/3\@sm {
     margin-left: 66.66667% !important; }
+  .u-push-1\/4\@sm {
+    margin-left: 25% !important; }
+  .u-push-2\/4\@sm {
+    margin-left: 50% !important; }
+  .u-push-3\/4\@sm {
+    margin-left: 75% !important; }
+  .u-push-1\/5\@sm {
+    margin-left: 20% !important; }
+  .u-push-2\/5\@sm {
+    margin-left: 40% !important; }
+  .u-push-3\/5\@sm {
+    margin-left: 60% !important; }
+  .u-push-4\/5\@sm {
+    margin-left: 80% !important; }
   .u-push-1\/6\@sm {
     margin-left: 16.66667% !important; }
   .u-push-2\/6\@sm {
@@ -1160,6 +1367,20 @@ a {
     margin-left: 33.33333% !important; }
   .u-push-2\/3\@md {
     margin-left: 66.66667% !important; }
+  .u-push-1\/4\@md {
+    margin-left: 25% !important; }
+  .u-push-2\/4\@md {
+    margin-left: 50% !important; }
+  .u-push-3\/4\@md {
+    margin-left: 75% !important; }
+  .u-push-1\/5\@md {
+    margin-left: 20% !important; }
+  .u-push-2\/5\@md {
+    margin-left: 40% !important; }
+  .u-push-3\/5\@md {
+    margin-left: 60% !important; }
+  .u-push-4\/5\@md {
+    margin-left: 80% !important; }
   .u-push-1\/6\@md {
     margin-left: 16.66667% !important; }
   .u-push-2\/6\@md {
@@ -1214,6 +1435,33 @@ a {
 .u-3\/3 {
   width: 100% !important; }
 
+.u-1\/4 {
+  width: 25% !important; }
+
+.u-2\/4 {
+  width: 50% !important; }
+
+.u-3\/4 {
+  width: 75% !important; }
+
+.u-4\/4 {
+  width: 100% !important; }
+
+.u-1\/5 {
+  width: 20% !important; }
+
+.u-2\/5 {
+  width: 40% !important; }
+
+.u-3\/5 {
+  width: 60% !important; }
+
+.u-4\/5 {
+  width: 80% !important; }
+
+.u-5\/5 {
+  width: 100% !important; }
+
 .u-1\/6 {
   width: 16.66667% !important; }
 
@@ -1243,6 +1491,24 @@ a {
     width: 66.66667% !important; }
   .u-3\/3\@sm {
     width: 100% !important; }
+  .u-1\/4\@sm {
+    width: 25% !important; }
+  .u-2\/4\@sm {
+    width: 50% !important; }
+  .u-3\/4\@sm {
+    width: 75% !important; }
+  .u-4\/4\@sm {
+    width: 100% !important; }
+  .u-1\/5\@sm {
+    width: 20% !important; }
+  .u-2\/5\@sm {
+    width: 40% !important; }
+  .u-3\/5\@sm {
+    width: 60% !important; }
+  .u-4\/5\@sm {
+    width: 80% !important; }
+  .u-5\/5\@sm {
+    width: 100% !important; }
   .u-1\/6\@sm {
     width: 16.66667% !important; }
   .u-2\/6\@sm {
@@ -1266,6 +1532,24 @@ a {
   .u-2\/3\@md {
     width: 66.66667% !important; }
   .u-3\/3\@md {
+    width: 100% !important; }
+  .u-1\/4\@md {
+    width: 25% !important; }
+  .u-2\/4\@md {
+    width: 50% !important; }
+  .u-3\/4\@md {
+    width: 75% !important; }
+  .u-4\/4\@md {
+    width: 100% !important; }
+  .u-1\/5\@md {
+    width: 20% !important; }
+  .u-2\/5\@md {
+    width: 40% !important; }
+  .u-3\/5\@md {
+    width: 60% !important; }
+  .u-4\/5\@md {
+    width: 80% !important; }
+  .u-5\/5\@md {
     width: 100% !important; }
   .u-1\/6\@md {
     width: 16.66667% !important; }

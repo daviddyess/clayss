@@ -2,20 +2,50 @@
 
 // Options
 
-$iota-components-table                   : true;
+$iota-components-table                    : true;
 
-$iota-components-table-namespace         : 'table' !default;
+$iota-components-table-namespace          : 'table' !default;
+$iota-components-table-striped-name       : 'striped' !default;
+$iota-components-table-row-name           : 'row' !default;
+$iota-components-table-head-name           : 'head' !default;
 
 $iota-components-table-padding           : $iota-global-gutter-default !default;
 $iota-components-table-background        : rgba(0, 0, 0, 0.5) !default;
+$iota-components-table-head-background        : rgb(187, 184, 184) !default;
+$iota-components-table-row-background        : rgb(252, 249, 249) !default;
+$iota-components-table-row-background-alternate        : rgba(0, 0, 0, 0.192) !default;
 
 // Helper Local Variables
 
 $iota-components-table-var-table         : $iota-global-components-namespace + $iota-components-table-namespace;
+$iota-components-table-var-table-head  : $iota-components-table-var-table + '__' + $iota-components-table-head-name;
+$iota-components-table-var-table-row  : $iota-components-table-var-table + '__' + $iota-components-table-row-name;
+$iota-components-table-var-table-striped  : $iota-components-table-var-table + '--' + $iota-components-table-striped-name;
 
 // Table Component
 
 .#{$iota-components-table-var-table} {
 
   background: $iota-components-table-background;
+}
+
+// Table Heading
+
+.#{$iota-components-table-var-table} {
+  
+    background: $iota-components-table-background;
+  }
+
+// Table Row
+
+.#{$iota-components-table-var-table-row} {
+  
+  background: $iota-components-table-row-background;
+}
+
+// Table Alternate Row
+
+.#{$iota-components-table-var-table-striped} tbody tr:nth-of-type(odd) {
+  
+  background: $iota-components-table-row-background-alternate;
 }

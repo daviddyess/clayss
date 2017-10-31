@@ -1,0 +1,83 @@
+// Card Component
+
+// Options
+
+$iota-components-card            : true;
+
+$iota-components-card-namespace  : 'card' !default;
+$iota-components-card-title-name  : 'title' !default;
+$iota-components-card-content-name  : 'content' !default;
+$iota-components-card-header-name  : 'header' !default;
+$iota-components-card-footer-name  : 'footer' !default;
+
+$iota-components-card-color      : #000 !default;
+$iota-components-card-margin     : 10px 0 0 0 !default;
+$iota-components-card-padding    : 0 !default;
+$iota-components-card-border     : 1px solid rgba(0,0,0,0.15) !default;
+$iota-components-card-background : rgba(255, 255, 255, 0.781)  !default;
+$iota-components-card-header-background : rgb(255, 255, 255)  !default;
+$iota-components-card-content-background : rgb(255, 255, 255)  !default;
+$iota-components-card-footer-background : rgb(255, 255, 255)  !default;
+$iota-components-card-border-radius: 3px !default;
+$iota-components-card-shadow     : 0 2px 4px 0 rgba(0,0,0,0.15) !default;
+
+// Helper Local Variables
+
+$iota-components-card-var-card: $iota-global-components-namespace + $iota-components-card-namespace;
+$iota-components-card-var-title: $iota-components-card-var-card + '__' + $iota-components-card-title-name;
+$iota-components-card-var-content: $iota-components-card-var-card + '__' + $iota-components-card-content-name;
+$iota-components-card-var-header: $iota-components-card-var-card + '__' + $iota-components-card-header-name;
+$iota-components-card-var-footer: $iota-components-card-var-card + '__' + $iota-components-card-footer-name;
+
+// Button Component
+.#{$iota-components-card-var-card}{
+  display: inline-block;
+  margin: $iota-components-card-margin;
+  padding: $iota-components-card-padding;
+  font: inherit;
+  width:100%;
+  border-radius: $iota-components-card-border-radius;
+  border: $iota-components-card-border;
+  box-shadow: $iota-components-card-shadow;
+  color: $iota-components-card-color;
+  background: $iota-components-card-background;
+}
+
+.#{$iota-components-card-var-title}{
+  font-weight: 700;
+  color: $iota-components-card-color;
+  background: $iota-components-card-background;
+}
+
+.#{$iota-components-card-var-title}--flare-right {
+  border-radius: 0 0 6px 0;
+  border: 1px solid rgb(169, 182, 255);
+  background: rgb(169, 182, 255);
+  padding:4px;
+}
+
+.#{$iota-components-card-var-title}--flare-left {
+  border-radius: 0 0 0 6px;
+  border: 1px solid rgb(169, 182, 255);
+  background: rgb(169, 182, 255);
+  padding:4px;
+}
+
+.#{$iota-components-card-var-title}--bar {
+  background: rgb(169, 182, 255);
+  margin: 2px 0;
+  padding: 7px;
+}
+.#{$iota-components-card-var-content}{
+  font-weight:inherit;
+  background: $iota-components-card-background;
+  padding: 7px;
+}
+
+.#{$iota-components-card-var-header}{
+ /* */
+}
+
+.#{$iota-components-card-var-footer}{
+ /* */
+}
