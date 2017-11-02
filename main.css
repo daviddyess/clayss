@@ -479,21 +479,36 @@ a {
 .c-button {
   display: inline-block;
   margin: 0;
+  /*@include _iota-generate-unit('padding', null, $iota-components-button-padding);*/
+  padding: 5px 30px;
   font: inherit;
   -webkit-font-smoothing: inherit;
   font-weight: initial;
   letter-spacing: inherit;
-  border-radius: 3px;
-  border: 1px outset buttonface;
+  overflow: hidden;
+  user-select: none;
+  border-radius: 2px;
+  border: none;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
+  letter-spacing: .5px;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-  color: buttontext;
-  background: buttonface; }
+  transition: .3s ease-out;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background: #26a69a; }
+
+.c-button:hover {
+  background-color: #2bbbad;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  outline: 0; }
+
+.c-button:focus {
+  background-color: #1d7d74; }
 
 .c-button {
   font-family: "Open Sans", san-serif; }
@@ -514,7 +529,7 @@ a {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px; }
 
-.c-input {
+.c-field {
   display: inline-block;
   margin: 0;
   font: inherit;
@@ -525,7 +540,15 @@ a {
   border: 1px outset buttonface;
   box-shadow: none;
   color: buttontext;
-  background: buttonface; }
+  background: white; }
+
+.c-field:hover {
+  border: 1px solid #51cbee;
+  box-shadow: 0 0 1px rgba(81, 204, 238, 0.637); }
+
+.c-field:focus {
+  border: 1px solid #51cbee;
+  box-shadow: 0 0 5px #51cbee; }
 
 .is-modal-open {
   position: fixed;
@@ -673,10 +696,17 @@ a {
 .c-navbar__subitem {
   margin: 0;
   position: absolute;
-  display: none; }
+  display: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .c-navbar__subitem a {
+    border-bottom: 1px solid #5e4a4a; }
 
 .c-navbar__item:hover .c-navbar__subitem {
   display: block; }
+
+.c-navbar__item .c-navbar__subitem--bl {
+  left: auto;
+  right: 0; }
 
 /**
  * Enable / Disable breakpoint specific classes

@@ -70,8 +70,17 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
   margin: 0;
   position: absolute;
   display: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  a {
+    border-bottom: 1px solid rgb(94, 74, 74);
+  }
 }
 
 .#{$iota-components-navbar-var-navbar}__item:hover .#{$iota-components-navbar-var-navbar}__subitem {
   display: block;
+}
+
+.#{$iota-components-navbar-var-navbar}__item .#{$iota-components-navbar-var-navbar}__subitem--bl {
+  left:auto;
+  right:0;
 }

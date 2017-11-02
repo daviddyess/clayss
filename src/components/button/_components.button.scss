@@ -6,13 +6,13 @@ $iota-components-button            : true;
 
 $iota-components-button-namespace  : 'button' !default;
 
-$iota-components-button-color      : buttontext !default;
+$iota-components-button-color      : #fff !default;
 $iota-components-button-margin     : 0 !default;
-$iota-components-button-padding    : 4px 6px !default;
-$iota-components-button-border     : 1px outset buttonface !default;
-$iota-components-button-background : buttonface !default;
-$iota-components-button-border-radius: 3px !default;
-$iota-components-button-shadow     : 0 2px 4px 0 rgba(0,0,0,0.15) !default;
+$iota-components-button-padding    : 5px 30px !default;
+$iota-components-button-border     : none !default;
+$iota-components-button-background : #26a69a !default;
+$iota-components-button-border-radius: 2px !default;
+$iota-components-button-shadow     : 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !default;
 
 // Helper Local Variables
 
@@ -22,20 +22,36 @@ $iota-components-button-var-button: $iota-global-components-namespace + $iota-co
 .#{$iota-components-button-var-button}{
   display: inline-block;
   @include _iota-generate-unit('margin', null, $iota-components-button-margin);
-  @include _iota-generate-unit('padding', null, $iota-components-button-padding);
+  /*@include _iota-generate-unit('padding', null, $iota-components-button-padding);*/
+  padding: $iota-components-button-padding;
   font: inherit;
   -webkit-font-smoothing: inherit;
   font-weight: initial;
   letter-spacing: inherit;
+  overflow: hidden;
+  user-select: none;
   border-radius: $iota-components-button-border-radius;
   border: $iota-components-button-border;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
+  letter-spacing: .5px;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: .3s ease-out;
+  -webkit-tap-highlight-color: transparent;
   box-shadow: $iota-components-button-shadow;
   color: $iota-components-button-color;
   background: $iota-components-button-background;
+}
+
+.#{$iota-components-button-var-button}:hover{
+  background-color: #2bbbad;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.#{$iota-components-button-var-button}:focus{
+  background-color: #1d7d74;
 }

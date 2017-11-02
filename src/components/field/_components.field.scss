@@ -4,13 +4,13 @@
 
 $iota-components-input            : true;
 
-$iota-components-input-namespace  : 'input' !default;
+$iota-components-input-namespace  : 'field' !default;
 
 $iota-components-input-color      : buttontext !default; // rgb(255, 255, 255) !default;
 $iota-components-input-margin     : 0 !default;
 $iota-components-input-padding    : 4px 6px !default;
 $iota-components-input-border     : 1px outset buttonface !default; //none !default;
-$iota-components-input-background : buttonface !default; //rgb(57, 178, 255) !default;
+$iota-components-input-background : white !default; //rgb(57, 178, 255) !default;
 $iota-components-input-border-radius: 3px !default;
 $iota-components-input-shadow     : none !default;
 
@@ -33,3 +33,14 @@ $iota-components-input-var-input: $iota-global-components-namespace + $iota-comp
   color: $iota-components-input-color;
   background: $iota-components-input-background;
 }
+
+.#{$iota-components-input-var-input}:hover { 
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 1px rgba(81, 204, 238, 0.637);
+}
+
+.#{$iota-components-input-var-input}:focus { 
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
