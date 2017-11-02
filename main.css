@@ -510,6 +510,39 @@ a {
 .c-button:focus {
   background-color: #1d7d74; }
 
+.c-button--round {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0; }
+
+.c-button--round-md {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  padding: 0; }
+
+.c-button--round-lg {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  padding: 0; }
+
+.c-button--square, .c-button--square {
+  width: 50px;
+  height: 50px;
+  padding: 0; }
+
+.c-button--square-md {
+  width: 55px;
+  height: 55px;
+  padding: 0; }
+
+.c-button--square-lg {
+  width: 60px;
+  height: 60px;
+  padding: 0; }
+
 .c-button {
   font-family: "Open Sans", san-serif; }
 
@@ -1000,6 +1033,18 @@ a {
  *
  * Type: String
  */
+.u-opacity-15 {
+  opacity: 0.15 !important; }
+
+.u-opacity-30 {
+  opacity: 0.3 !important; }
+
+.u-opacity-60 {
+  opacity: 0.6 !important; }
+
+.u-opacity-90 {
+  opacity: 0.9 !important; }
+
 /**
  * Padding default gutter. Use a number for a simple size
  * and a map for responsive.
