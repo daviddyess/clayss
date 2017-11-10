@@ -4,7 +4,12 @@ $t_ff_u:         'Ubuntu', serif;
 $t_ff_primary:   'Open Sans', san-serif;
 $t_fw_medium:    bold;
 
+html {
+    font-size: 10px;
+}
+
 body{
     font-family: $t_ff_primary;
+    font-size: 1.4rem;
 }
 

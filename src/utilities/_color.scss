@@ -4,7 +4,20 @@
  * Type: Map
  */
 
-$iota-utils-color-names: ();
+$iota-utils-color-names: (
+    body: $text-color-body,
+    container: $text-color-container,
+    primary: $text-color-primary, 
+    secondary: $text-color-secondary,
+    accent: $text-color-accent,
+    accent-alt: $text-color-accent-alt,
+    info: $text-color-info,
+    danger: $text-color-danger,
+    success: $text-color-success,
+    warning: $text-color-warning,
+    light: $text-color-light,
+    dark: $text-color-dark
+);
 
 
 /**

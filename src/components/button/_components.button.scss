@@ -8,7 +8,7 @@ $iota-components-button-namespace  : 'button' !default;
 
 $iota-components-button-color      : #fff !default;
 $iota-components-button-margin     : 0 !default;
-$iota-components-button-padding    : 5px 30px !default;
+$iota-components-button-padding    : 5px 15px !default;
 $iota-components-button-border     : none !default;
 $iota-components-button-background : #26a69a !default;
 $iota-components-button-border-radius: 2px !default;
@@ -26,7 +26,7 @@ $iota-components-button-var-button: $iota-global-components-namespace + $iota-co
   padding: $iota-components-button-padding;
   font: inherit;
   -webkit-font-smoothing: inherit;
-  font-weight: initial;
+  font-weight: 700;
   letter-spacing: inherit;
   overflow: hidden;
   user-select: none;

@@ -8,25 +8,27 @@ $iota-components-input-namespace  : 'field' !default;
 
 $iota-components-input-color      : buttontext !default; // rgb(255, 255, 255) !default;
 $iota-components-input-margin     : 0 !default;
-$iota-components-input-padding    : 4px 6px !default;
-$iota-components-input-border     : 1px outset buttonface !default; //none !default;
-$iota-components-input-background : white !default; //rgb(57, 178, 255) !default;
+$iota-components-input-padding    : 5px 12px !default;
+$iota-components-input-border     : 1px solid white !default;
+$iota-components-input-background : transparent !default; //rgb(57, 178, 255) !default;
 $iota-components-input-border-radius: 3px !default;
-$iota-components-input-shadow     : none !default;
+$iota-components-input-shadow     : 0 7px 6px -6px #777 !default;
 
 // Helper Local Variables
 
 $iota-components-input-var-input: $iota-global-components-namespace + $iota-components-input-namespace;
 
-// Input Component
+// Input Component 
+
 .#{$iota-components-input-var-input}{
   display: inline-block;
-  @include _iota-generate-unit('margin', null, $iota-components-input-margin);
-  @include _iota-generate-unit('padding', null, $iota-components-input-padding);
+  margin: $iota-components-input-margin;
+  padding: $iota-components-input-padding;
   font: inherit;
   -webkit-font-smoothing: inherit;
   font-weight: initial;
   letter-spacing: inherit;
+  line-height:28px;
   border-radius: $iota-components-input-border-radius;
   border: $iota-components-input-border;
   box-shadow: $iota-components-input-shadow;

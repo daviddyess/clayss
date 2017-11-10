@@ -4,8 +4,49 @@
  * Type: Map
  */
 
-$iota-utils-bgcolor-names: ();
+$utils-bgcolor-names: ();
 
+$background-color-body: #e1fffa;
+$background-text-color-body: #000000;
+$background-color-container: #f7f7f7;
+$background-text-color-container: #313131;
+$background-color-primary: #009688;
+$background-text-color-primary: #ffffff;
+$background-color-secondary: #A7FFEB;
+$background-text-color-secondary: #2c7777;
+$background-color-accent: #004D40;
+$background-text-color-accent: #ffffff;
+$background-color-accent-alt: #009688;
+$background-text-color-accent-alt: #ffffff;
+$background-color-info: #B2EBF2;
+$background-text-color-info: #000000;
+$background-color-danger: #F44336;
+$background-text-color-danger: #ffffff;
+$background-color-success: #69F0AE;
+$background-text-color-success: #ffffff;
+$background-color-warning: #FFEB3B;
+$background-text-color-warning: #000000;
+$background-color-light: #00ffe5;
+$background-text-color-light: #000000;
+$background-color-dark: #006969;
+$background-text-color-dark: #ffffff;
+
+$clay-bgcolor-names: (
+    body: $background-color-body, 
+    container: $background-color-container,
+    primary: $background-color-primary, 
+    secondary: $background-color-secondary,
+    accent: $background-color-accent,
+    accent-alt: $background-color-accent-alt,
+    info: $background-color-info,
+    danger: $background-color-danger,
+    success: $background-color-success,
+    warning: $background-color-warning,
+    light: $background-color-light,
+    dark: $background-color-dark,
+);
+
+$iota-utils-bgcolor-names: map_merge($clay-bgcolor-names, $utils-bgcolor-names);
 
 /**
  * Namespace classes
@@ -15,5 +56,26 @@ $iota-utils-bgcolor-names: ();
 
 $iota-utils-bgcolor-namespace: 'bgcolor-';
 
-
 @import 'node_modules/iotacss/utilities/bgcolor';
+
+$clay-bgcolor-text-colors: (
+    body: $background-text-color-body,
+    container: $background-text-color-container,
+    primary: $background-text-color-primary,
+    secondary: $background-text-color-secondary,
+    accent: $background-text-color-accent,
+    accent-alt: $background-text-color-accent-alt,
+    info: $background-text-color-info,
+    danger: $background-text-color-danger,
+    success: $background-text-color-success,
+    warning: $background-text-color-warning,
+    light: $background-text-color-light,
+    dark: $background-text-color-dark
+);
+
+@each $bgcolor-name, $bgcolor-value in $iota-utils-bgcolor-names {
+    
+    .#{$iota-utils-bgcolor-var + $bgcolor-name} {
+      color: map_get($clay-bgcolor-text-colors, $bgcolor-name);
+    }  
+}

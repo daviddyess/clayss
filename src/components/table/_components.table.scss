@@ -7,13 +7,16 @@ $iota-components-table                    : true;
 $iota-components-table-namespace          : 'table' !default;
 $iota-components-table-striped-name       : 'striped' !default;
 $iota-components-table-row-name           : 'row' !default;
+$iota-components-table-cell-name           : 'cell' !default;
 $iota-components-table-head-name           : 'head' !default;
 
 $iota-components-table-padding           : $iota-global-gutter-default !default;
-$iota-components-table-background        : rgba(0, 0, 0, 0.5) !default;
-$iota-components-table-head-background        : rgb(187, 184, 184) !default;
-$iota-components-table-row-background        : rgb(252, 249, 249) !default;
-$iota-components-table-row-background-alternate        : rgba(0, 0, 0, 0.192) !default;
+$iota-components-table-background        : $background-color-primary !default;
+$iota-components-table-head-background        : darken($background-color-primary, 10%) !default;
+$iota-components-table-row-background        : $background-color-container !default;
+$iota-components-table-cell-background       : $background-color-container !default;
+$iota-components-table-row-background-alt        : darken( $background-color-container, 5% ) !default;
+$iota-components-table-border               : 1px solid darken($background-color-container,15%);
 
 // Helper Local Variables
 
@@ -25,27 +28,42 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
 // Table Component
 
 .#{$iota-components-table-var-table} {
-
+  @extend .u-color-primary;
   background: $iota-components-table-background;
+  width:100%;
 }
 
 // Table Heading
 
-.#{$iota-components-table-var-table} {
-  
-    background: $iota-components-table-background;
-  }
+.#{$iota-components-table-var-table-head} {
+  @if variable-exists('text-color-table-head'){ color: $text-color-table-head; } @else { color: invert($text-color-primary);}
+  padding: $iota-components-table-padding;
+  background: $iota-components-table-head-background;
+}
 
 // Table Row
 
 .#{$iota-components-table-var-table-row} {
-  
+  @extend .u-color-container;
   background: $iota-components-table-row-background;
 }
 
 // Table Alternate Row
 
-.#{$iota-components-table-var-table-striped} tbody tr:nth-of-type(odd) {
-  
-  background: $iota-components-table-row-background-alternate;
+.#{$iota-components-table-var-table-striped} tbody tr:nth-of-type(even) {
+  @extend .u-color-container;
+  background: $iota-components-table-row-background-alt;
+}
+
+.#{$iota-components-table-var-table}--border {
+  th, td {
+    border: $iota-components-table-border;
+  }
+}
+
+// Table Row Cell
+
+.#{$iota-components-table-var-table}__cell {
+  @extend .u-color-container;
+  padding: $iota-components-table-padding;
 }

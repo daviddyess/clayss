@@ -1,1 +1,110 @@
-@import 'src/clay.scss';
+// Text Color names:
+$text-color-body: #e1fffa;
+$text-color-container: rgb(83, 83, 83);
+$text-color-primary: #363636;
+$text-color-secondary: #55746d;
+$text-color-accent: #ffffff;
+$text-color-accent-alt: #ffffff;
+$text-color-info: #398eb6;
+$text-color-danger: #ff1818;
+$text-color-success: #54d11a;
+$text-color-warning: #ff9900;
+$text-color-light: #bebebe;
+$text-color-dark: #575757;
+// Generate Text Color classes (u-color-*) [utilities/color]
+$utils-color-names: (
+    body: $text-color-body,
+    container: $text-color-container,
+    primary: $text-color-primary, 
+    secondary: $text-color-secondary,
+    accent: $text-color-accent,
+    accent-alt: $text-color-accent-alt,
+    info: $text-color-info,
+    danger: $text-color-danger,
+    success: $text-color-success,
+    warning: $text-color-warning,
+    light: $text-color-light,
+    dark: $text-color-dark
+);
+// Table Text Colors:
+//$text-color-table: $text-color-primary;
+$text-color-table-head: #fff;
+// Background Color names:
+/* Optional - Defined by ClaySS in utilities/bgcolor
+$background-color-body: #e1fffa;
+$background-color-container: #f7f7f7;
+$background-color-primary: #009688;
+$background-color-secondary: #A7FFEB;
+$background-color-accent: #004D40;
+$background-color-accent-alt: #009688;
+$background-color-info: #B2EBF2;
+$background-color-danger: #F44336;
+$background-color-success: #69F0AE;
+$background-color-warning: #FFEB3B;
+$background-color-light: #00ffe5;
+$background-color-dark: #006969;
+*/
+// Generate Background Color classes (u-bgcolor-*) [utilities/bgcolor]
+/* Optional - Defined by ClaySS in utilities/bgcolor
+$utils-bgcolor-names: (
+    body: $background-color-body,
+    container: $background-color-container,
+    primary: $background-color-primary, 
+    secondary: $background-color-secondary,
+    accent: $background-color-accent,
+    accent-alt: $background-color-accent-alt
+    /* Optional - Defined by ClaySS in utilities/bgcolor
+    info: $background-color-info,
+    danger: $background-color-danger,
+    success: $background-color-success,
+    warning: $background-color-warning,
+    light: $background-color-light,
+    dark: $background-color-dark
+);
+*/
+// Import Modules
+@import 'src/settings/core';
+@import 'src/settings/colors';
+@import 'src/settings/type';
+
+@import 'src/tools/core';
+@import 'src/tools/breakpoint';
+@import 'src/tools/ms';
+@import 'src/tools/rtl';
+@import 'src/tools/type';
+
+@import 'src/base/initialize';
+
+@import 'src/objects/container';
+@import 'src/objects/grid';
+@import 'src/objects/list';
+@import 'src/objects/media';
+@import 'src/objects/type';
+
+@import 'src/utilities/align';
+@import 'src/utilities/align-items';
+@import 'src/utilities/color';
+@import 'src/utilities/bgcolor';
+@import 'src/utilities/clearfix';
+@import 'src/utilities/color';
+@import 'src/utilities/display';
+@import 'src/utilities/float';
+@import 'src/utilities/justify-content';
+@import 'src/utilities/margin';
+@import 'src/utilities/opacity';
+@import 'src/utilities/padding';
+@import 'src/utilities/position';
+@import 'src/utilities/pull';
+@import 'src/utilities/push';
+@import 'src/utilities/size';
+@import 'src/utilities/text';
+@import 'src/utilities/transform';
+@import 'src/utilities/weight';
+
+@import 'src/components/button';
+@import 'src/components/fieldset';
+@import 'src/components/field';
+@import 'src/components/modal';
+@import 'src/components/table';
+@import 'src/components/card';
+@import 'src/components/navbar';
