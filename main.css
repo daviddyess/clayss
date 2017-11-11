@@ -584,7 +584,7 @@ a {
  * Type: String
  */
 .u-color-body {
-  color: #e1fffa !important; }
+  color: #444444 !important; }
 
 .u-color-container, .c-table__row, .c-table--striped tbody tr:nth-of-type(even), .c-table__cell {
   color: #535353 !important; }
@@ -596,10 +596,10 @@ a {
   color: #55746d !important; }
 
 .u-color-accent {
-  color: #ffffff !important; }
+  color: #50a78d !important; }
 
 .u-color-accent-alt {
-  color: #ffffff !important; }
+  color: #3ccfaf !important; }
 
 .u-color-info {
   color: #398eb6 !important; }
@@ -722,7 +722,7 @@ a {
  * Type: String
  */
 .u-color-body {
-  color: #e1fffa !important; }
+  color: #444444 !important; }
 
 .u-color-container, .c-table__row, .c-table--striped tbody tr:nth-of-type(even), .c-table__cell {
   color: #535353 !important; }
@@ -734,10 +734,10 @@ a {
   color: #55746d !important; }
 
 .u-color-accent {
-  color: #ffffff !important; }
+  color: #50a78d !important; }
 
 .u-color-accent-alt {
-  color: #ffffff !important; }
+  color: #3ccfaf !important; }
 
 .u-color-info {
   color: #398eb6 !important; }
