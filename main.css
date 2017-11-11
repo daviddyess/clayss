@@ -1785,7 +1785,8 @@ $iota-components-fieldset-legend-border-radius : 10px !default;*/
   border: 1px solid white;
   box-shadow: 0 7px 6px -6px #777;
   color: buttontext;
-  background: transparent; }
+  background: transparent;
+  width: 100%; }
 
 .c-field:hover {
   border: 1px solid #51cbee;
@@ -1794,6 +1795,9 @@ $iota-components-fieldset-legend-border-radius : 10px !default;*/
 .c-field:focus {
   border: 1px solid #51cbee;
   box-shadow: 0 0 5px #51cbee; }
+
+textarea.c-field {
+  min-height: min-content; }
 
 .is-modal-open {
   position: fixed;
@@ -1843,24 +1847,31 @@ $iota-components-fieldset-legend-border-radius : 10px !default;*/
 
 .c-table {
   background: #009688;
-  width: 100%; }
+  width: 100%;
+  display: table; }
 
 .c-table__head {
   color: #fff;
   padding: 10px;
-  background: #00635a; }
+  background: #00635a;
+  display: table-cell;
+  font-weight: bold;
+  text-align: center; }
 
 .c-table__row {
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  display: table-row; }
 
 .c-table--striped tbody tr:nth-of-type(even) {
   background: #eaeaea; }
 
-.c-table--border th, .c-table--border td {
+.c-table--border .c-table__head,
+.c-table--border .c-table__cell {
   border: 1px solid #d1d1d1; }
 
 .c-table__cell {
-  padding: 10px; }
+  padding: 10px;
+  display: table-cell; }
 
 .c-card {
   display: inline-block;

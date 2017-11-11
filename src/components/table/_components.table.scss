@@ -31,6 +31,7 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
   @extend .u-color-primary;
   background: $iota-components-table-background;
   width:100%;
+  display: table;
 }
 
 // Table Heading
@@ -39,6 +40,9 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
   @if variable-exists('text-color-table-head'){ color: $text-color-table-head; } @else { color: invert($text-color-primary);}
   padding: $iota-components-table-padding;
   background: $iota-components-table-head-background;
+  display: table-cell;
+  font-weight: bold;
+  text-align: center;
 }
 
 // Table Row
@@ -46,6 +50,7 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
 .#{$iota-components-table-var-table-row} {
   @extend .u-color-container;
   background: $iota-components-table-row-background;
+  display: table-row;
 }
 
 // Table Alternate Row
@@ -55,10 +60,14 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
   background: $iota-components-table-row-background-alt;
 }
 
+// Table Border
+
 .#{$iota-components-table-var-table}--border {
-  th, td {
+  .#{$iota-components-table-var-table-head},
+  .#{$iota-components-table-var-table}__cell {
     border: $iota-components-table-border;
   }
+
 }
 
 // Table Row Cell
@@ -66,4 +75,5 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
 .#{$iota-components-table-var-table}__cell {
   @extend .u-color-container;
   padding: $iota-components-table-padding;
+  display: table-cell;
 }
