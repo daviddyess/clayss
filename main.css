@@ -586,7 +586,8 @@ a {
 .u-color-body {
   color: #444444 !important; }
 
-.u-color-container, .c-table__row, .c-table--striped tbody tr:nth-of-type(even), .c-table__cell {
+.u-color-container, .c-table__row, .c-table--striped tr:nth-of-type(odd),
+.c-table--striped .c-table__row:nth-of-type(odd), .c-table__cell {
   color: #535353 !important; }
 
 .u-color-primary, .c-table {
@@ -724,7 +725,8 @@ a {
 .u-color-body {
   color: #444444 !important; }
 
-.u-color-container, .c-table__row, .c-table--striped tbody tr:nth-of-type(even), .c-table__cell {
+.u-color-container, .c-table__row, .c-table--striped tr:nth-of-type(odd),
+.c-table--striped .c-table__row:nth-of-type(odd), .c-table__cell {
   color: #535353 !important; }
 
 .u-color-primary, .c-table {
@@ -1862,7 +1864,8 @@ textarea.c-field {
   background: #f7f7f7;
   display: table-row; }
 
-.c-table--striped tbody tr:nth-of-type(even) {
+.c-table--striped tr:nth-of-type(odd),
+.c-table--striped .c-table__row:nth-of-type(odd) {
   background: #eaeaea; }
 
 .c-table--border .c-table__head,

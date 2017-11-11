@@ -55,7 +55,8 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
 
 // Table Alternate Row
 
-.#{$iota-components-table-var-table-striped} tbody tr:nth-of-type(even) {
+.#{$iota-components-table-var-table-striped} tr:nth-of-type(odd), 
+.#{$iota-components-table-var-table-striped} .#{$iota-components-table-var-table-row}:nth-of-type(odd){
   @extend .u-color-container;
   background: $iota-components-table-row-background-alt;
 }
