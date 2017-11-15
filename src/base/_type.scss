@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans:400italic,700italic,400,700);
+
+$t_ff_u:         'Ubuntu', serif;   
+$t_ff_primary:   'Open Sans', san-serif;
+$t_fw_medium:    bold;
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: $t_ff_primary;
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+    font-weight: bold;
+    color: $text-color-primary;
+}
+
+h1 {
+    font-size: 1.9em;
+    color: lighten($text-color-primary, 2%);
+}
+
+h2 {
+    font-size: 1.7em;
+    color: lighten($text-color-primary, 3%);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: lighten($text-color-primary, 4%);
+}
+
+h4 { 
+    font-size: 1.4em;
+    color: lighten($text-color-primary, 5%);
+}
+
+h5 {
+    font-size: 1.2em;
+    color: lighten($text-color-primary, 6%);
+}
+
+h6 {
+    font-size: 1em;
+    color: lighten($text-color-primary, 7%);
+}
+
+a {
+    color: darken($text-color-accent,20%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darken($text-color-accent-alt,40%);
+    text-decoration: underline;
+}
+
+a:visited {
+    @extend a;
+}
