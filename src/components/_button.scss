@@ -1,23 +1,2 @@
-// Updates the settings for the default button style
-//$iota-components-button-color      : $c_white;
-//$iota-components-button-margin     : auto;
-//$iota-components-button-padding    : 4px 6px;
-//$iota-components-button-background : $c_blue;
-
 // Imports the Button Component module
 @import 'button/components.button';
-
-// Extending the behavior of the default button
-.c-button {
-  font-family: $t_ff_primary;
-}
-
-.c-button:hover { }
-
-.c-button:active { }
-
-
-// Creates a button variation
-.c-button--primary {
-  background-color: $c_white;
-}
