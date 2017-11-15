@@ -10,9 +10,9 @@ $iota-components-input-color      : buttontext !default; // rgb(255, 255, 255) !
 $iota-components-input-margin     : 0 !default;
 $iota-components-input-padding    : 5px 12px !default;
 $iota-components-input-border     : 1px solid white !default;
-$iota-components-input-background : transparent !default; //rgb(57, 178, 255) !default;
+$iota-components-input-background : #ffffff !default; //rgb(57, 178, 255) !default;
 $iota-components-input-border-radius: 3px !default;
-$iota-components-input-shadow     : 0 7px 6px -6px #777 !default;
+$iota-components-input-shadow     : 0 0 1px $background-color-primary, 0 7px 6px -6px #777 !default;
 
 // Helper Local Variables
 
