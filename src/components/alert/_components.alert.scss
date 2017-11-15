@@ -1,0 +1,47 @@
+// Alert Component
+
+// Options
+
+$iota-components-alert                   : true;
+
+$iota-components-alert-namespace         : 'alert' !default;
+$iota-components-alert-padding           : $iota-global-gutter-default !default;
+$iota-components-alert-border            : none;
+$iota-components-alert-border-radius     : 4px !default;
+$iota-components-alert-background        : inherit !default;
+$iota-components-alert-margin            : 3px 0;
+$iota-components-alert-position          : relative;
+$iota-components-alert-width             : 100%;
+
+// Helper Local Variables
+
+$iota-components-alert-var-alert         : $iota-global-components-namespace + $iota-components-alert-namespace;
+
+// Alert Component
+
+.#{$iota-components-alert-var-alert} {
+  padding: $iota-components-alert-padding;
+  background: $iota-components-alert-background;
+  border:$iota-components-alert-border;
+  border-radius: $iota-components-alert-border-radius;
+  margin: $iota-components-alert-margin;
+  position: $iota-components-alert-position;
+  width: $iota-components-alert-width;
+  box-sizing: border-box;
+}
+
+.#{$iota-components-alert-var-alert}__close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
