@@ -11,7 +11,7 @@ $iota-components-card-header-name  : 'header' !default;
 $iota-components-card-footer-name  : 'footer' !default;
 
 $iota-components-card-color      : #000 !default;
-$iota-components-card-margin     : 10px 0 0 0 !default;
+$iota-components-card-margin     : 0 !default;
 $iota-components-card-padding    : 0 !default;
 $iota-components-card-border     : 1px solid rgba(0,0,0,0.15) !default;
 $iota-components-card-background : rgba(255, 255, 255, 0.781)  !default;
@@ -64,7 +64,7 @@ $iota-components-card-var-footer: $iota-components-card-var-card + '__' + $iota-
 }
 
 .#{$iota-components-card-var-title}--bar {
-  background: rgb(169, 182, 255);
+  background: linear-gradient(to left, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26));
   margin: 2px 0;
   padding: 7px;
 }
