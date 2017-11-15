@@ -10,9 +10,10 @@ $iota-components-navbar-color      : buttontext !default;
 $iota-components-navbar-margin     : 0 !default;
 $iota-components-navbar-padding    : 4px 6px !default;
 $iota-components-navbar-border     : 1px outset buttonface !default;
-$iota-components-navbar-background : buttonface !default;
+$iota-components-navbar-background : linear-gradient(to right, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26)) !default;
 $iota-components-navbar-border-radius: 3px !default;
-$iota-components-navbar-shadow     : 0 2px 4px 0 rgba(0,0,0,0.15) !default;
+$iota-components-navbar-shadow     : 0px 2px 2px 0px rgba(0,0,0,0.2) !default;
+$iota-components-navbar-height     :24px;
 
 // Helper Local Variables
 
@@ -20,10 +21,11 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
 
 .#{$iota-components-navbar-var-navbar}{
   width: 100%;
-  background: #eee;
+  background: $iota-components-navbar-background;
   display:flex;  
   flex-direction:column;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: $iota-components-navbar-shadow;
+  line-height: $iota-components-navbar-height;
 }
 
 .#{$iota-components-navbar-var-navbar}__menu {
@@ -34,14 +36,16 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
 }
 
 .#{$iota-components-navbar-var-navbar}__brand {
-  padding: 10px;
+  
   margin: 0;
   list-style-type:none;
   a {
     text-decoration: none;
-    font-weight: bold;
+    //font-weight: bold;
+    //font-size: 1.6em;
     color: black;
     display:flex;
+    padding: 10px;
   }
   a:hover {
     color: gray;
@@ -57,26 +61,35 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
     color: black;
     text-align: center;
     padding: 10px;
-    background-color: #eee;
+    background-color: rgba(255, 255, 255, 0.124);
     margin:0;
     display: block;
   }
   a:hover {
-    background-color: rgb(192, 188, 188);
+    background-color: rgba(255, 255, 255, 0.247);
   }
 }
 
-.#{$iota-components-navbar-var-navbar}__subitem {
+.#{$iota-components-navbar-var-navbar}__subitem, .#{$iota-components-navbar-var-navbar}__subitem--click {
   margin: 0;
   position: absolute;
   display: none;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   a {
+    background-color: rgba(255, 255, 255, 0.918);
     border-bottom: 1px solid rgb(94, 74, 74);
+  }
+  a:hover {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 255, 242);
   }
 }
 
 .#{$iota-components-navbar-var-navbar}__item:hover .#{$iota-components-navbar-var-navbar}__subitem {
+  display: block;
+}
+
+.#{$iota-components-navbar-var-navbar}__item:focus .#{$iota-components-navbar-var-navbar}__subitem--click {
   display: block;
 }
 
