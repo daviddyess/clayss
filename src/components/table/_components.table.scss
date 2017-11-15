@@ -10,13 +10,21 @@ $iota-components-table-row-name           : 'row' !default;
 $iota-components-table-cell-name           : 'cell' !default;
 $iota-components-table-head-name           : 'head' !default;
 
+$iota-components-table-width      : 100%; 
 $iota-components-table-padding           : $iota-global-gutter-default !default;
-$iota-components-table-background        : $background-color-primary !default;
-$iota-components-table-head-background        : darken($background-color-primary, 10%) !default;
+$iota-components-table-background        : darken($background-color-container,15%) !default;
+$iota-components-table-head-background        : $background-color-container !default;
+$iota-components-table-head-border        : 2px solid darken($background-color-container,15%) !default;
+$iota-components-table-head-border-radius: 0;
+$iota-components-table-head-padding      : $iota-global-gutter-default/2;
 $iota-components-table-row-background        : $background-color-container !default;
 $iota-components-table-cell-background       : $background-color-container !default;
 $iota-components-table-row-background-alt        : darken( $background-color-container, 5% ) !default;
-$iota-components-table-border               : 1px solid darken($background-color-container,15%);
+$iota-components-table-border-color         : darken($background-color-container,15%);
+$iota-components-table-border-width         : 1px;
+$iota-components-table-border-style         : solid;
+$iota-components-table-border               : $iota-components-table-border-width $iota-components-table-border-style $iota-components-table-border-color !default;
+$iota-components-table-border-radius: 10px;
 
 // Helper Local Variables
 
@@ -30,27 +38,29 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
 .#{$iota-components-table-var-table} {
   @extend .u-color-primary;
   background: $iota-components-table-background;
-  width:100%;
+  width:$iota-components-table-width;
   display: table;
 }
 
-// Table Heading
-
-.#{$iota-components-table-var-table-head} {
-  @if variable-exists('text-color-table-head'){ color: $text-color-table-head; } @else { color: invert($text-color-primary);}
-  padding: $iota-components-table-padding;
-  background: $iota-components-table-head-background;
-  display: table-cell;
-  font-weight: bold;
-  text-align: center;
+.#{$iota-components-table-var-table}--50 {
+  width: 50%;
 }
 
-// Table Row
+.#{$iota-components-table-var-table}--25 {
+  width: 25%;
+}
 
-.#{$iota-components-table-var-table-row} {
-  @extend .u-color-container;
-  background: $iota-components-table-row-background;
-  display: table-row;
+.#{$iota-components-table-var-table}--auto {
+  width: auto;
+}
+
+.#{$iota-components-table-var-table}--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.#{$iota-components-table-var-table}--right {
+  margin-left: auto;
 }
 
 // Table Alternate Row
@@ -61,14 +71,65 @@ $iota-components-table-var-table-striped  : $iota-components-table-var-table + '
   background: $iota-components-table-row-background-alt;
 }
 
+// Table Heading
+
+.#{$iota-components-table-var-table-head} {
+  @if variable-exists('text-color-table-head'){ color: $text-color-table-head; } @else { color: $text-color-primary;}
+  padding: $iota-components-table-head-padding;
+  background: $iota-components-table-head-background;
+  border: $iota-components-table-head-border;
+  border-radius: $iota-components-table-head-border-radius;
+  @extend h5;
+  display: table-cell;
+  font-weight: bold;
+  text-align: center;
+}
+
 // Table Border
 
 .#{$iota-components-table-var-table}--border {
-  .#{$iota-components-table-var-table-head},
+  border: $iota-components-table-border;
+  border-radius: $iota-components-table-border-radius;
   .#{$iota-components-table-var-table}__cell {
     border: $iota-components-table-border;
   }
+}
 
+.#{$iota-components-table-var-table}--border-thick {
+  @extend .#{$iota-components-table-var-table}--border;
+  border-width: $iota-components-table-border-width*3;
+}
+
+// Table Round Border
+
+.#{$iota-components-table-var-table}--border-round {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: $iota-components-table-border;
+  border-radius: $iota-components-table-border-radius;
+  .#{$iota-components-table-var-table}__cell {
+    border: $iota-components-table-border;
+  }
+  tr.#{$iota-components-table-var-table-row}:first-child th.#{$iota-components-table-var-table-head}:first-child {
+    border-radius: $iota-components-table-border-radius 0 0 0;
+  }
+  tr.#{$iota-components-table-var-table-row}:first-child th.#{$iota-components-table-var-table-head}:last-child {
+    border-radius: 0 $iota-components-table-border-radius 0 0;
+  }
+  tr.#{$iota-components-table-var-table-row}:last-child td.#{$iota-components-table-var-table}__cell:first-child {
+    border-radius: 0 0 0 $iota-components-table-border-radius;
+  }
+  tr.#{$iota-components-table-var-table-row}:last-child td.#{$iota-components-table-var-table}__cell:last-child {
+    border-radius: 0 0 $iota-components-table-border-radius 0;
+  }
+}
+
+// Table Row
+
+.#{$iota-components-table-var-table-row} {
+  @extend .u-color-container;
+  background: $iota-components-table-row-background;
+  display: table-row;
 }
 
 // Table Row Cell
