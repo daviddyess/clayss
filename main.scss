@@ -28,7 +28,7 @@ $utils-color-names: (
 );
 // Table Text Colors:
 //$text-color-table: $text-color-primary;
-$text-color-table-head: #fff;
+//$text-color-table-head: #fff;
 // Background Color names:
 /* Optional - Defined by ClaySS in utilities/bgcolor
 $background-color-body: #e1fffa;
@@ -74,6 +74,7 @@ $utils-bgcolor-names: (
 @import 'src/tools/type';
 
 @import 'src/base/initialize';
+@import 'src/base/type';
 
 @import 'src/objects/container';
 @import 'src/objects/grid';
@@ -108,3 +109,5 @@ $utils-bgcolor-names: (
 @import 'src/components/table';
 @import 'src/components/card';
 @import 'src/components/navbar';
+@import 'src/components/sidebar';
+@import 'src/components/alert';
