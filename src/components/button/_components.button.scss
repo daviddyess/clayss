@@ -7,12 +7,20 @@ $iota-components-button            : true;
 $iota-components-button-namespace  : 'button' !default;
 
 $iota-components-button-color      : #fff !default;
-$iota-components-button-margin     : 0 !default;
+$iota-components-button-margin     : 4px 3px !default;
 $iota-components-button-padding    : 5px 15px !default;
 $iota-components-button-border     : none !default;
-$iota-components-button-background : #26a69a !default;
+$iota-components-button-background : darken($background-color-primary, 15%) !default;//#26a69a !default;
 $iota-components-button-border-radius: 2px !default;
 $iota-components-button-shadow     : 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !default;
+$iota-components-button-font-weight: 500;
+
+$iota-components-button-shapes-default-size: 50px;
+$iota-components-button-shapes-small-size: 35px;
+$iota-components-button-shapes-medium-size: 55px;
+$iota-components-button-shapes-large-size: 65px;
+
+$iota-components-button-small-padding    : 4px 8px !default;
 
 // Helper Local Variables
 
@@ -21,12 +29,10 @@ $iota-components-button-var-button: $iota-global-components-namespace + $iota-co
 // Button Component
 .#{$iota-components-button-var-button}{
   display: inline-block;
-  @include _iota-generate-unit('margin', null, $iota-components-button-margin);
-  /*@include _iota-generate-unit('padding', null, $iota-components-button-padding);*/
   padding: $iota-components-button-padding;
-  font: inherit;
+  font-size: 1.1em;
   -webkit-font-smoothing: inherit;
-  font-weight: 700;
+  font-weight: $iota-components-button-font-weight;
   letter-spacing: inherit;
   overflow: hidden;
   user-select: none;
@@ -44,53 +50,193 @@ $iota-components-button-var-button: $iota-global-components-namespace + $iota-co
   box-shadow: $iota-components-button-shadow;
   color: $iota-components-button-color;
   background: $iota-components-button-background;
+  margin: $iota-components-button-margin;
+}
+
+.#{$iota-components-button-var-button}--sm {
+  padding: $iota-components-button-small-padding;
+  font-size: .9em;
+  text-transform: unset;
+  font-weight: 400;
 }
 
 .#{$iota-components-button-var-button}:hover{
-  background-color: #2bbbad;
+  background-color: darken($iota-components-button-background, 10%);
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
   outline: 0;
 }
 
 .#{$iota-components-button-var-button}:focus{
-  background-color: #1d7d74;
+  background-color: darken($iota-components-button-background, 25%);
 }
 
 .#{$iota-components-button-var-button}--round {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: $iota-components-button-shapes-default-size;
+  height: $iota-components-button-shapes-default-size;
+  padding: 0;
+}
+
+.#{$iota-components-button-var-button}--round-sm {
+  border-radius: 50%;
+  width: $iota-components-button-shapes-small-size;
+  height: $iota-components-button-shapes-small-size;
   padding: 0;
 }
 
 .#{$iota-components-button-var-button}--round-md {
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: $iota-components-button-shapes-medium-size;
+  height: $iota-components-button-shapes-medium-size;
   padding: 0;
 }
 
 .#{$iota-components-button-var-button}--round-lg {
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
+  width: $iota-components-button-shapes-large-size;
+  height: $iota-components-button-shapes-large-size;
   padding: 0;
 }
 
-.#{$iota-components-button-var-button}--square, .#{$iota-components-button-var-button}--square {
-  width: 50px;
-  height: 50px;
+.#{$iota-components-button-var-button}--square {
+  width: $iota-components-button-shapes-default-size;
+  height: $iota-components-button-shapes-default-size;
+  padding: 0;
+}
+
+.#{$iota-components-button-var-button}--square-sm {
+  width: $iota-components-button-shapes-small-size;
+  height: $iota-components-button-shapes-small-size;
   padding: 0;
 }
 
 .#{$iota-components-button-var-button}--square-md {
-  width: 55px;
-  height: 55px;
+  width: $iota-components-button-shapes-medium-size;
+  height: $iota-components-button-shapes-medium-size;
   padding: 0;
 }
 
 .#{$iota-components-button-var-button}--square-lg {
-  width: 60px;
-  height: 60px;
+  width: $iota-components-button-shapes-large-size;
+  height: $iota-components-button-shapes-large-size;
   padding: 0;
+}
+
+// Styled Buttons
+// Default
+.#{$iota-components-button-var-button}--default {
+  background: $background-color-container;
+  color: buttontext;
+}
+
+.#{$iota-components-button-var-button}--default:hover {
+  background: darken($background-color-container,10%);
+}
+
+.#{$iota-components-button-var-button}--default:focus {
+  background: darken($background-color-container,25%);
+}
+// Secondary
+.#{$iota-components-button-var-button}--secondary {
+  background: $background-color-secondary;
+  color: invert($background-color-secondary);
+}
+
+.#{$iota-components-button-var-button}--secondary:hover {
+  background: darken($background-color-secondary,10%);
+}
+
+.#{$iota-components-button-var-button}--secondary:focus {
+  background: darken($background-color-secondary,25%);
+}
+// Accent
+.#{$iota-components-button-var-button}--accent {
+  background: $background-color-accent;
+  color: darken($background-color-accent,50%);
+}
+
+.#{$iota-components-button-var-button}--accent:hover {
+  background: darken($background-color-accent,10%);
+}
+
+.#{$iota-components-button-var-button}--accent:focus {
+  background: darken($background-color-accent,25%);
+}
+// Info
+.#{$iota-components-button-var-button}--info {
+  background: $background-color-info;
+  color: invert($background-color-info);
+}
+
+.#{$iota-components-button-var-button}--info:hover {
+  background: darken($background-color-info,10%);
+}
+
+.#{$iota-components-button-var-button}--info:focus {
+  background: darken($background-color-info,25%);
+}
+// Danger
+.#{$iota-components-button-var-button}--danger {
+  background: $background-color-danger;
+  color: lighten($background-color-danger,50%);
+}
+
+.#{$iota-components-button-var-button}--danger:hover {
+  background: darken($background-color-danger,10%);
+}
+
+.#{$iota-components-button-var-button}--danger:focus {
+  background: darken($background-color-danger,25%);
+}
+// Success
+.#{$iota-components-button-var-button}--success {
+  background: $background-color-success;
+  color: darken($background-color-success,50%);
+}
+
+.#{$iota-components-button-var-button}--success:hover {
+  background: darken($background-color-success,10%);
+}
+
+.#{$iota-components-button-var-button}--success:focus {
+  background: darken($background-color-success,25%);
+}
+// Warning
+.#{$iota-components-button-var-button}--warning {
+  background: $background-color-warning;
+  color: darken($background-color-warning,50%);
+}
+
+.#{$iota-components-button-var-button}--warning:hover {
+  background: darken($background-color-warning,10%);
+}
+
+.#{$iota-components-button-var-button}--warning:focus {
+  background: darken($background-color-warning,25%);
+}
+// Light
+.#{$iota-components-button-var-button}--light {
+  background: $background-color-light;
+  color: darken($background-color-light,50%);
+}
+
+.#{$iota-components-button-var-button}--light:hover {
+  background: darken($background-color-light,10%);
+}
+
+.#{$iota-components-button-var-button}--light:focus {
+  background: darken($background-color-light,25%);
+}
+// Dark
+.#{$iota-components-button-var-button}--dark {
+  background: $background-color-dark;
+  color: lighten($background-color-dark,50%);
+}
+
+.#{$iota-components-button-var-button}--dark:hover {
+  background: darken($background-color-dark,10%);
+}
+
+.#{$iota-components-button-var-button}--dark:focus {
+  background: darken($background-color-dark,25%);
 }
