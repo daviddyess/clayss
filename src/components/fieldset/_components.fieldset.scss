@@ -40,6 +40,8 @@ $iota-components-fieldset-var-fieldset         : $iota-global-components-namespa
 .#{$iota-components-fieldset-var-fieldset}__fields {
   @extend .u-pl\@sm;
   @extend .u-pr\@sm;
+  @extend .u-pt\@sm;
+  @extend .u-pb\@sm;
 }
 
 .#{$iota-components-fieldset-var-fieldset}__controls {
