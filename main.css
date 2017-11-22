@@ -1124,11 +1124,11 @@ a:hover {
 @media screen and (min-width: 768px) {
   .u-p\@sm {
     padding: 10px !important; }
-  .u-pt\@sm, .c-fieldset__controls {
+  .u-pt\@sm, .c-fieldset__fields, .c-fieldset__controls {
     padding-top: 10px !important; }
   .u-pr\@sm, .c-fieldset__fields, .c-fieldset__controls {
     padding-right: 10px !important; }
-  .u-pb\@sm, .c-fieldset__controls {
+  .u-pb\@sm, .c-fieldset__fields, .c-fieldset__controls {
     padding-bottom: 10px !important; }
   .u-pl\@sm, .c-fieldset__fields, .c-fieldset__controls {
     padding-left: 10px !important; }
@@ -2831,3 +2831,55 @@ textarea.c-field {
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
   opacity: .2; }
+
+.c-tooltip--container {
+  position: relative;
+  min-height: 100px;
+  padding: 10px; }
+
+.c-tooltip__block {
+  /*
+  padding: $iota-components-tooltip-padding;
+  background: $iota-components-tooltip-background;
+  border:$iota-components-tooltip-border;
+  border-radius: $iota-components-tooltip-border-radius;
+  margin: $iota-components-tooltip-margin;
+  position: $iota-components-tooltip-position;
+  width: $iota-components-tooltip-width;
+  box-sizing: border-box;
+  */
+  display: none;
+  background-color: #c6ff8e;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #84ff84; }
+
+.c-tooltip--block:hover + .c-tooltip__block {
+  display: block;
+  position: absolute;
+  top: 50px; }
+
+.c-tabs {
+  /*
+  padding: $iota-components-tabs-padding;
+  background: $iota-components-tabs-background;
+  border:$iota-components-tabs-border;
+  border-radius: $iota-components-tabs-border-radius;
+  margin: $iota-components-tabs-margin;
+  position: $iota-components-tabs-position;
+  width: $iota-components-tabs-width;
+  box-sizing: border-box;
+  */ }
+  .c-tabs .c-tabs__tab {
+    padding: 10px;
+    margin-right: 2px;
+    background-color: #F0F0F0;
+    border: 1px solid #E2E2E2;
+    font-weight: bold;
+    font-size: 1.3em; }
+  .c-tabs .c-tabs__tab:hover {
+    background: #02c6f0;
+    color: #F0F0F0;
+    border: 1px solid #02c6f0; }
+  .c-tabs a {
+    text-decoration: none; }
