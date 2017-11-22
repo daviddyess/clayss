@@ -1,0 +1,49 @@
+// Tabs Component
+
+// Options
+
+$iota-components-tabs                   : true;
+
+$iota-components-tabs-namespace         : 'tabs' !default;
+$iota-components-tabs-padding           : $iota-global-gutter-default !default;
+$iota-components-tabs-border            : none;
+$iota-components-tabs-border-radius     : 4px !default;
+$iota-components-tabs-background        : inherit !default;
+$iota-components-tabs-margin            : 3px 0;
+$iota-components-tabs-position          : relative;
+$iota-components-tabs-width             : 100%;
+
+// Helper Local Variables
+
+$iota-components-tabs-var-tabs         : $iota-global-components-namespace + $iota-components-tabs-namespace;
+ 
+// Alert Component
+
+.#{$iota-components-tabs-var-tabs} {
+  .#{$iota-components-tabs-var-tabs}__tab {
+    padding:10px;
+    margin-right: 2px;
+    background-color: #F0F0F0;
+    border:1px solid #E2E2E2;
+    font-weight:bold;
+    font-size:1.3em;
+  }
+  .#{$iota-components-tabs-var-tabs}__tab:hover{
+    background:#02c6f0;
+    color:#F0F0F0;
+    border:1px solid #02c6f0;
+  } 
+  a {
+    text-decoration:none;
+  }
+  /*
+  padding: $iota-components-tabs-padding;
+  background: $iota-components-tabs-background;
+  border:$iota-components-tabs-border;
+  border-radius: $iota-components-tabs-border-radius;
+  margin: $iota-components-tabs-margin;
+  position: $iota-components-tabs-position;
+  width: $iota-components-tabs-width;
+  box-sizing: border-box;
+  */
+}
