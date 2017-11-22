@@ -1,0 +1,48 @@
+// Tooltip Component
+
+// Options
+
+$iota-components-tooltip                   : true;
+
+$iota-components-tooltip-namespace         : 'tooltip' !default;
+$iota-components-tooltip-padding           : $iota-global-gutter-default !default;
+$iota-components-tooltip-border            : none;
+$iota-components-tooltip-border-radius     : 4px !default;
+$iota-components-tooltip-background        : inherit !default;
+$iota-components-tooltip-margin            : 3px 0;
+$iota-components-tooltip-position          : relative;
+$iota-components-tooltip-width             : 100%;
+
+// Helper Local Variables
+
+$iota-components-tooltip-var-tooltip         : $iota-global-components-namespace + $iota-components-tooltip-namespace;
+
+.#{$iota-components-tooltip-var-tooltip}--container {
+  position: relative;
+  min-height: 100px;
+  padding: $iota-components-tooltip-padding;
+}
+
+.#{$iota-components-tooltip-var-tooltip}__block {
+  /*
+  padding: $iota-components-tooltip-padding;
+  background: $iota-components-tooltip-background;
+  border:$iota-components-tooltip-border;
+  border-radius: $iota-components-tooltip-border-radius;
+  margin: $iota-components-tooltip-margin;
+  position: $iota-components-tooltip-position;
+  width: $iota-components-tooltip-width;
+  box-sizing: border-box;
+  */
+  display: none;
+  background-color:#c6ff8e;
+	padding:10px;
+	font-weight:bold;
+	border:1px solid #84ff84;
+}
+
+.#{$iota-components-tooltip-var-tooltip}--block:hover + .#{$iota-components-tooltip-var-tooltip}__block {
+  display: block;
+  position: absolute;
+  top: 50px;
+}
