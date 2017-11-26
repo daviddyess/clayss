@@ -15,15 +15,15 @@ $background-text-color-primary: #ffffff;
 $background-color-secondary: #A7FFEB;
 $background-text-color-secondary: #2c7777;
 $background-color-accent: rgb(0, 225, 255);
-$background-text-color-accent: #8f8f8f;
+$background-text-color-accent: #727272;
 $background-color-accent-alt: #cbe0de;
-$background-text-color-accent-alt: #919191;
+$background-text-color-accent-alt: #757575;
 $background-color-info: #B2EBF2;
 $background-text-color-info: #000000;
 $background-color-danger: #F44336;
 $background-text-color-danger: #ffffff;
-$background-color-success: #69F0AE;
-$background-text-color-success: #ffffff;
+$background-color-success: #c6ff8e;
+$background-text-color-success: #000000;
 $background-color-warning: #FFEB3B;
 $background-text-color-warning: #000000;
 $background-color-light: #00ffe5;
@@ -77,5 +77,6 @@ $clay-bgcolor-text-colors: (
     
     .#{$iota-utils-bgcolor-var + $bgcolor-name} {
       color: map_get($clay-bgcolor-text-colors, $bgcolor-name);
+      border: 1px solid darken(map_get($clay-bgcolor-names, $bgcolor-name),5%);
     }  
 }
