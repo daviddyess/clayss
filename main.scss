@@ -102,7 +102,9 @@ $utils-bgcolor-names: (
 @import 'src/utilities/transform';
 @import 'src/utilities/weight';
 
+@import 'src/components/dropdown';
 @import 'src/components/button';
+@import 'src/components/button-group';
 @import 'src/components/fieldset';
 @import 'src/components/field';
 @import 'src/components/modal';
