@@ -50,3 +50,26 @@ $iota-components-input-var-input: $iota-global-components-namespace + $iota-comp
 textarea.#{$iota-components-input-var-input}{
   min-height: min-content;
 }
+
+input[type=checkbox].#{$iota-components-input-var-input}, .#{$iota-components-input-var-input}__checkbox {
+
+  width: 20px;
+  height: 20px;
+  border: none;
+  box-shadow: none;
+
+}
+
+.#{$iota-components-input-var-input}--checkbox {
+  padding: 10px 5px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.#{$iota-components-input-var-input}--checkbox label {
+  margin: 0;
+  padding: 0;
+  display: inline-block !important;
+  margin-left: 10px;
+}
+
