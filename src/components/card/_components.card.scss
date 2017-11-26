@@ -41,6 +41,11 @@ $iota-components-card-var-footer: $iota-components-card-var-card + '__' + $iota-
   box-shadow: $iota-components-card-shadow;
   color: $iota-components-card-color;
   background: $iota-components-card-background;
+  margin-bottom: 10px;
+}
+
+.#{$iota-components-card-var-card}__wrapper {
+  padding:2px;
 }
 
 .#{$iota-components-card-var-title}{
@@ -66,11 +71,51 @@ $iota-components-card-var-footer: $iota-components-card-var-card + '__' + $iota-
 .#{$iota-components-card-var-title}--bar {
   background: linear-gradient(to left, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26));
   margin: 2px 0;
-  padding: 7px;
+  padding: 3px;
 }
+
+.#{$iota-components-card-var-title}--bar-r {
+  @extend .#{$iota-components-card-var-title}--bar;
+  background: linear-gradient(to right, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26));
+}
+
+.#{$iota-components-card-var-title}--bar-light {
+  background: linear-gradient(to left, rgba(238, 238, 238, 0.507), rgba(223, 223, 223, 0.26));
+  margin: 2px 0;
+  padding: 3px;
+}
+
+.#{$iota-components-card-var-title}--bar-light-r {
+  @extend .#{$iota-components-card-var-title}--bar-light;
+  background: linear-gradient(to right, rgba(238, 238, 238, 0.507), rgba(223, 223, 223, 0.26));
+}
+
+.#{$iota-components-card-var-title}--bar-medium {
+  background: linear-gradient(to left, rgba(124, 124, 124, 0.507), rgba(124, 124, 124, 0.26));
+  margin: 2px 0;
+  padding: 3px;
+}
+
+.#{$iota-components-card-var-title}--bar-medium-r {
+  @extend .#{$iota-components-card-var-title}--bar-medium;
+  background: linear-gradient(to right, rgba(124, 124, 124, 0.507), rgba(124, 124, 124, 0.26));
+}
+
+.#{$iota-components-card-var-title}--bar-dark {
+  background: linear-gradient(to left, rgba(31, 31, 31, 0.507), rgba(31, 31, 31, 0.26));
+  margin: 2px 0;
+  padding: 3px;
+}
+
+.#{$iota-components-card-var-title}--bar-dark-r {
+  @extend .#{$iota-components-card-var-title}--bar-dark;
+  background: linear-gradient(to right, rgba(31, 31, 31, 0.507), rgba(31, 31, 31, 0.26));
+
+}
+
 .#{$iota-components-card-var-content}{
   font-weight:inherit;
-  background: $iota-components-card-background;
+  background: $iota-components-card-content-background;
   padding: 7px;
 }
 
@@ -80,4 +125,8 @@ $iota-components-card-var-footer: $iota-components-card-var-card + '__' + $iota-
 
 .#{$iota-components-card-var-footer}{
  /* */
+}
+
+.#{$iota-components-card-var-card}--clear {
+  background: transparent;
 }
