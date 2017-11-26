@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "iotacss-components-button@^1.0.3",
+        "scope": null,
+        "escapedName": "iotacss-components-button",
+        "name": "iotacss-components-button",
+        "rawSpec": "^1.0.3",
+        "spec": ">=1.0.3 <2.0.0",
+        "type": "range"
+      },
+      "/home/david/Dev/iotacss"
+    ]
+  ],
+  "_from": "iotacss-components-button@>=1.0.3 <2.0.0",
+  "_id": "iotacss-components-button@1.0.3",
+  "_inCache": true,
+  "_location": "/iotacss-components-button",
+  "_nodeVersion": "4.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/iotacss-components-button-1.0.3.tgz_1494707284434_0.07320839376188815"
+  },
+  "_npmUser": {
+    "name": "iotacss",
+    "email": "iotacss@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "iotacss-components-button@^1.0.3",
+    "scope": null,
+    "escapedName": "iotacss-components-button",
+    "name": "iotacss-components-button",
+    "rawSpec": "^1.0.3",
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iotacss-components-button/-/iotacss-components-button-1.0.3.tgz",
+  "_shasum": "40fb3c64b48f0ca0b8ff9c3e9e2292d1e1b46360",
+  "_shrinkwrap": null,
+  "_spec": "iotacss-components-button@^1.0.3",
+  "_where": "/home/david/Dev/iotacss",
+  "author": {
+    "name": "Dimitris Psaropoulos",
+    "email": "info@harby.me"
+  },
+  "bugs": {
+    "url": "https://github.com/iotacss/components.button/issues"
+  },
+  "dependencies": {},
+  "description": "Button component for iotaCSS",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "40fb3c64b48f0ca0b8ff9c3e9e2292d1e1b46360",
+    "tarball": "https://registry.npmjs.org/iotacss-components-button/-/iotacss-components-button-1.0.3.tgz"
+  },
+  "gitHead": "ccb78277fc02d91c027418ac8d82185c89c4cdfa",
+  "homepage": "https://github.com/iotacss/components.button#readme",
+  "keywords": [
+    "iotacss",
+    "css",
+    "sass",
+    "bem",
+    "oocss"
+  ],
+  "main": "_components.button.scss",
+  "maintainers": [
+    {
+      "name": "iotacss",
+      "email": "iotacss@gmail.com"
+    }
+  ],
+  "name": "iotacss-components-button",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iotacss/components.button.git"
+  },
+  "scripts": {},
+  "version": "1.0.3"
+}

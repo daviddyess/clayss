@@ -1,0 +1,53 @@
+// Button Group Component
+
+// Options
+
+$iota-components-button-group            : true;
+
+$iota-components-button-group-namespace  : 'button-group' !default;
+
+$iota-components-button-group-color      : #fff !default;
+$iota-components-button-group-margin     : 4px 3px !default;
+$iota-components-button-group-padding    : 5px 15px !default;
+$iota-components-button-group-border     : none !default;
+$iota-components-button-group-background : darken($background-color-primary, 15%) !default;//#26a69a !default;
+$iota-components-button-group-border-radius: 4px !default;
+$iota-components-button-group-shadow     : 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !default;
+$iota-components-button-group-font-weight: 500;
+
+$iota-components-button-group-shapes-default-size: 50px;
+$iota-components-button-group-shapes-small-size: 35px;
+$iota-components-button-group-shapes-medium-size: 55px;
+$iota-components-button-group-shapes-large-size: 65px;
+
+$iota-components-button-group-small-padding    : 4px 8px !default;
+
+// Helper Local Variables
+
+$iota-components-button-group-var-button-group: $iota-global-components-namespace + $iota-components-button-group-namespace;
+
+.#{$iota-components-button-group-var-button-group}{
+  @extend .#{$iota-components-button-var-button};
+  background-color: inherit;
+  font-size: 1em;
+  padding:0;
+}
+
+// Button Component
+.#{$iota-components-button-group-var-button-group} .#{$iota-components-button-var-button}{
+  margin: 0;
+  //float: left;
+  border:none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.#{$iota-components-button-group-var-button-group} .#{$iota-components-button-var-button}, 
+.#{$iota-components-button-group-var-button-group} a.#{$iota-components-button-var-button}:hover {
+  box-shadow: none;
+}
+
+.#{$iota-components-button-group-var-button-group} .#{$iota-components-button-var-button}:not(:first-child),
+.#{$iota-components-button-group-var-button-group} a.#{$iota-components-button-var-button}:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.459);
+}
