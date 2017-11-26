@@ -1,0 +1,68 @@
+// Dropdown Component
+
+// Options
+
+$iota-components-dropdown            : true;
+
+$iota-components-dropdown-namespace  : 'dropdown' !default;
+
+$iota-components-dropdown-color      : buttontext !default;
+$iota-components-dropdown-margin     : 0 !default;
+$iota-components-dropdown-padding    : 4px 6px !default;
+$iota-components-dropdown-border     : 1px outset buttonface !default;
+$iota-components-dropdown-background : linear-gradient(to right, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26)) !default;
+$iota-components-dropdown-border-radius: 3px !default;
+$iota-components-dropdown-shadow     : 0px 2px 2px 0px rgba(0,0,0,0.2) !default;
+$iota-components-dropdown-height     :24px;
+
+// Helper Local Variables
+
+$iota-components-dropdown-var-dropdown: $iota-global-components-namespace + $iota-components-dropdown-namespace;
+
+.#{$iota-components-dropdown-var-dropdown} {
+  margin: 0;
+  display:inline-block;
+  list-style-type:none;
+  a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.124);
+    margin:0;
+    display: block;
+  }
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.247);
+  }
+}
+
+.#{$iota-components-dropdown-var-dropdown}__item, .#{$iota-components-dropdown-var-dropdown}__item--click {
+
+  position: absolute;
+  display: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  z-index: 2;
+  a {
+    background-color: rgba(255, 255, 255, 0.918);
+    border-bottom: 1px solid rgb(94, 74, 74);
+    
+  }
+  a:hover {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 255, 242);
+  }
+}
+
+.#{$iota-components-dropdown-var-dropdown}:hover .#{$iota-components-dropdown-var-dropdown}__item {
+  display: block;
+}
+
+.#{$iota-components-dropdown-var-dropdown}:focus .#{$iota-components-dropdown-var-dropdown}__item--click {
+  display: block;
+}
+
+.#{$iota-components-dropdown-var-dropdown} .#{$iota-components-dropdown-var-dropdown}__item--bl {
+  left:auto;
+  right:0;
+}
