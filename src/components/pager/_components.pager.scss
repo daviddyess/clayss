@@ -1,0 +1,48 @@
+// Pager Component
+
+// Options
+
+$iota-components-pager            : true;
+
+$iota-components-pager-namespace  : 'pager' !default;
+$iota-components-pager-num-name  : 'num' !default;
+$iota-components-pager-active-name  : 'active' !default;
+
+$iota-components-pager-margin     : $iota-global-gutter-default !default;
+$iota-components-pager-padding    : $iota-global-gutter-default !default;
+$iota-components-pager-border     : 1px solid rgba(0,0,0,0.15) !default;
+$iota-components-pager-border-radius: 3px !default;
+$iota-components-pager-shadow     : 0 2px 4px 0 rgba(0,0,0,0.15) !default;
+$iota-components-pager-font-weight: bold !default;
+
+// Helper Local Variables
+
+$iota-components-pager-var-pager: $iota-global-components-namespace + $iota-components-pager-namespace;
+$iota-components-pager-var-num: $iota-components-pager-var-pager + '__' + $iota-components-pager-num-name;
+$iota-components-pager-var-active: $iota-components-pager-var-pager + '__' + $iota-components-pager-active-name;
+
+// Pager Component
+.#{$iota-components-pager-var-pager}{
+  padding: $iota-components-pager-padding;
+  border-radius: $iota-components-pager-border-radius;
+  border: $iota-components-pager-border;
+  box-shadow: $iota-components-pager-shadow;
+  margin-bottom: $iota-components-pager-margin;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.#{$iota-components-pager-var-num}{
+  font-weight:$iota-components-pager-font-weight;
+  padding:$iota-components-pager-padding/2;
+}
+
+.#{$iota-components-pager-var-num}:hover{
+  @extend .u-bgcolor-light;
+}
+
+.#{$iota-components-pager-var-active}{
+  font-weight:$iota-components-pager-font-weight;
+  padding:$iota-components-pager-padding/2;
+}
