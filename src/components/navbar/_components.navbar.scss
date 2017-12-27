@@ -13,7 +13,26 @@ $iota-components-navbar-border     : 1px outset buttonface !default;
 $iota-components-navbar-background : linear-gradient(to right, rgba(0, 150, 135, 0.507), rgba(0, 150, 135, 0.26)) !default;
 $iota-components-navbar-border-radius: 3px !default;
 $iota-components-navbar-shadow     : 0px 2px 2px 0px rgba(0,0,0,0.2) !default;
-$iota-components-navbar-height     :24px;
+$iota-components-navbar-height     :24px !default;
+
+$iota-components-navbar-brand-color: black !default;
+$iota-components-navbar-brand-color-hover: gray !default;
+$iota-components-navbar-brand-font-size: 1.6em !default;
+$iota-components-navbar-brand-font-weight: bold !default;
+$iota-components-navbar-brand-decoration: none !default;
+
+$iota-components-navbar-item-color: black !default;
+$iota-components-navbar-item-color-hover: gray !default;
+$iota-components-navbar-item-background: none !default;
+$iota-components-navbar-item-background-hover: rgba(255, 255, 255, 0.124) !default;
+
+$iota-components-navbar-subitem-background: rgba(255, 255, 255, 0.918) !default;
+$iota-components-navbar-subitem-background-hover: rgb(255, 255, 255) !default;
+$iota-components-navbar-subitem-border: 1px solid rgba(0,0,0,0.2) !default;
+$iota-components-navbar-subitem-link-border: 1px solid rgb(94, 74, 74) !default;
+$iota-components-navbar-subitem-link-border-hover: 1px solid rgb(0, 255, 242) !default;
+$iota-components-navbar-subitem-color: $iota-components-navbar-item-color !default;
+
 
 // Helper Local Variables
 
@@ -40,15 +59,15 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
   margin: 0;
   list-style-type:none;
   a {
-    text-decoration: none;
-    //font-weight: bold;
-    //font-size: 1.6em;
-    color: black;
+    text-decoration: $iota-components-navbar-brand-decoration;
+    font-weight: $iota-components-navbar-brand-font-weight;
+    font-size: $iota-components-navbar-brand-font-size;
+    color: $iota-components-navbar-brand-color;
     display:flex;
     padding: 10px;
   }
   a:hover {
-    color: gray;
+    color: $iota-components-navbar-brand-color-hover;
   }
 }
 
@@ -58,15 +77,15 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
   list-style-type:none;
   a {
     text-decoration: none;
-    color: black;
+    color: $iota-components-navbar-item-color;
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.124);
+    background: $iota-components-navbar-item-background;
     margin:0;
     display: block;
   }
   a:hover {
-    background-color: rgba(255, 255, 255, 0.247);
+    background: $iota-components-navbar-item-background-hover;
   }
 }
 
@@ -74,14 +93,16 @@ $iota-components-navbar-var-navbar: $iota-global-components-namespace + $iota-co
   margin: 0;
   position: absolute;
   display: none;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border: $iota-components-navbar-subitem-border;
+  z-index: 9999;
   a {
-    background-color: rgba(255, 255, 255, 0.918);
-    border-bottom: 1px solid rgb(94, 74, 74);
+    background: $iota-components-navbar-subitem-background;
+    border-bottom: $iota-components-navbar-subitem-link-border;
+    color: $iota-components-navbar-subitem-color;
   }
   a:hover {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(0, 255, 242);
+    background: $iota-components-navbar-subitem-background-hover;
+    border-bottom: $iota-components-navbar-subitem-link-border-hover;
   }
 }
 

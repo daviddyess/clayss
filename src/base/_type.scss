@@ -1,22 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans:400italic,700italic,400,700);
-
-$t_ff_u:         'Ubuntu', serif;   
-$t_ff_primary:   'Open Sans', san-serif;
-$t_fw_medium:    bold;
-
 html {
     font-size: 10px;
 }
 
 body{
-    font-family: $t_ff_primary;
+    font-family: $font-primary;
     font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 5px 0;
     font-weight: bold;
-    color: $text-color-primary;
+    font-family: $font-secondary;
 }
 
 h1 {
@@ -61,4 +55,8 @@ a:hover {
 
 a:visited {
     @extend a;
+}
+
+ul li {
+    margin-left: $iota-global-gutter-default * 1.5;
 }

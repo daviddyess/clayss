@@ -1,0 +1,91 @@
+// App Component
+
+
+
+
+// Options
+
+$iota-components-app                   : true;
+
+$iota-components-app-namespace         : 'app' !default;
+
+$iota-components-app-padding           : $iota-global-gutter-default/2 !default;
+$iota-components-app-border            : none !default;
+$iota-components-app-border-radius     : 4px !default;
+$iota-components-app-background        : none !default;
+$iota-components-app-margin            : 3px 0 !default;
+$iota-components-app-position          : relative !default;
+$iota-components-app-width             : 100% !default;
+$iota-components-app-shadow            : none !default;
+$iota-components-app-color             : $text-color-container !default;
+
+$iota-components-app-head-padding           : $iota-global-gutter-default/2 !default;
+$iota-components-app-head-border            : none !default;
+$iota-components-app-head-border-radius     : 4px !default;
+$iota-components-app-head-background        : none !default;
+$iota-components-app-head-margin       : 3px 0 !default;
+$iota-components-app-head-position          : relative !default;
+$iota-components-app-head-width             : 100% !default;
+$iota-components-app-head-shadow            : none !default;
+$iota-components-app-head-color             : $iota-components-app-color !default;
+
+$iota-components-app-content-padding           : $iota-global-gutter-default/2 !default;
+$iota-components-app-content-border            : none !default;
+$iota-components-app-content-border-radius     : 4px !default;
+$iota-components-app-content-background        : none !default;
+$iota-components-app-content-margin            : 3px 0 !default;
+$iota-components-app-content-position          : relative !default;
+$iota-components-app-content-width             : 100% !default;
+$iota-components-app-content-shadow            : none !default;
+$iota-components-app-content-color             : $iota-components-app-color !default;
+
+// Helper Local Variables
+
+$iota-components-app-var-app         : $iota-global-components-namespace + $iota-components-app-namespace;
+
+// App Component
+
+.#{$iota-components-app-var-app} {
+  padding: $iota-components-app-padding;
+  background: $iota-components-app-background;
+  border: $iota-components-app-border;
+  @if(variable-exists(iota-components-app-border-top)) {
+  border-top: $iota-components-app-border-top;
+  }
+  @if(variable-exists(iota-components-app-border-bottom)) {
+  border-bottom: $iota-components-app-border-bottom;
+  }
+  @if(variable-exists(iota-components-app-border-left)) {
+  border-left: $iota-components-app-border-left;
+  }
+  @if(variable-exists(iota-components-app-border-right)) {
+  border-right: $iota-components-app-border-right;
+  }
+  margin: $iota-components-app-margin;
+  position: $iota-components-app-position;
+  width: $iota-components-app-width;
+  box-sizing: border-box;
+  box-shadow: $iota-components-app-shadow;
+}
+
+.#{$iota-components-app-var-app}__head {
+  padding: $iota-components-app-head-padding;
+  background: $iota-components-app-head-background;
+  border: $iota-components-app-head-border;
+  margin: $iota-components-app-head-margin;
+  position: $iota-components-app-head-position;
+  width: $iota-components-app-head-width;
+  box-sizing: border-box;
+  box-shadow: $iota-components-app-head-shadow;
+}
+
+.#{$iota-components-app-var-app}__content {
+  padding: $iota-components-app-content-padding;
+  background: $iota-components-app-content-background;
+  border: $iota-components-app-content-border;
+  margin: $iota-components-app-content-margin;
+  position: $iota-components-app-content-position;
+  width: $iota-components-app-content-width;
+  box-sizing: border-box;
+  box-shadow: $iota-components-app-content-shadow;
+}

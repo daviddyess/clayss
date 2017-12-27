@@ -1,0 +1,35 @@
+// Header Component
+
+
+
+
+// Options
+
+$iota-components-header                   : true;
+
+$iota-components-header-namespace         : 'header' !default;
+$iota-components-header-padding           : $iota-global-gutter-default/2 !default;
+$iota-components-header-border            : none !default;
+$iota-components-header-border-radius     : 4px !default;
+$iota-components-header-background        : none !default;
+$iota-components-header-margin            : 3px 0 !default;
+$iota-components-header-position          : relative !default;
+$iota-components-header-width             : 100% !default;
+$iota-components-header-shadow            : none !default;
+
+// Helper Local Variables
+
+$iota-components-header-var-header         : $iota-global-components-namespace + $iota-components-header-namespace;
+
+// Header Component
+
+.#{$iota-components-header-var-header} {
+  padding: $iota-components-header-padding;
+  background: $iota-components-header-background;
+  border: $iota-components-header-border;
+  margin: $iota-components-header-margin;
+  position: $iota-components-header-position;
+  width: $iota-components-header-width;
+  box-sizing: border-box;
+  box-shadow: $iota-components-header-shadow;
+}

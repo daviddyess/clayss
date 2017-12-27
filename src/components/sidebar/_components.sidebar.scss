@@ -9,12 +9,12 @@ $iota-components-sidebar                   : true;
 
 $iota-components-sidebar-namespace         : 'sidebar' !default;
 $iota-components-sidebar-padding           : $iota-global-gutter-default/2 !default;
-$iota-components-sidebar-border            : none;
+$iota-components-sidebar-border            : none !default;
 $iota-components-sidebar-border-radius     : 4px !default;
 $iota-components-sidebar-background        : linear-gradient(to left, rgba(0,150,136, 0), rgba(0, 150, 135, 0.26)) !default;
-$iota-components-sidebar-margin            : 3px 0;
-$iota-components-sidebar-position          : relative;
-$iota-components-sidebar-width             : 100%;
+$iota-components-sidebar-margin            : 3px 0 !default;
+$iota-components-sidebar-position          : relative !default;
+$iota-components-sidebar-width             : 100% !default;
 
 // Helper Local Variables
 
@@ -26,7 +26,18 @@ $iota-components-sidebar-var-sidebar         : $iota-global-components-namespace
   padding: $iota-components-sidebar-padding;
   background: $iota-components-sidebar-background;
   border:$iota-components-sidebar-border;
-  border-bottom: $iota-components-sidebar-border;
+  @if(variable-exists(iota-components-sidebar-border-top)) {
+  border-top: $iota-components-sidebar-border-top;
+  }
+  @if(variable-exists(iota-components-sidebar-border-bottom)) {
+  border-bottom: $iota-components-sidebar-border-bottom;
+  }
+  @if(variable-exists(iota-components-sidebar-border-left)) {
+  border-left: $iota-components-sidebar-border-left;
+  }
+  @if(variable-exists(iota-components-sidebar-border-right)) {
+  border-right: $iota-components-sidebar-border-right;
+  }
   margin: $iota-components-sidebar-margin;
   position: $iota-components-sidebar-position;
   width: $iota-components-sidebar-width;

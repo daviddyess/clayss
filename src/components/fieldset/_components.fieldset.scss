@@ -12,10 +12,10 @@ $iota-components-fieldset-padding           : 0 !default;
 $iota-components-fieldset-border            : 1px 1px 1px 0 solid rgba(6, 174, 252, 0.158) !default;
 $iota-components-fieldset-border-radius     : 4px !default;
 $iota-components-fieldset-background        : linear-gradient(to top, rgba(0,150,136, 0), rgba(0, 150, 135, 0.13)) !default;
-$iota-components-fieldset-margin            : 0;
+$iota-components-fieldset-margin            : 0 0 3px 0;
 
 $iota-components-fieldset-legend-padding       : 5px !default;
-$iota-components-fieldset-legend-margin        : 30px 0 0 0;
+$iota-components-fieldset-legend-margin        : 0 0 3px 0;
 $iota-components-fieldset-legend-width         : 100%;
 $iota-components-fieldset-legend-background    : linear-gradient(to bottom, rgb(255, 255, 255), rgb(189,228,224)) !default;
 

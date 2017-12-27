@@ -44,3 +44,32 @@ $iota-components-tabs-var-tabs         : $iota-global-components-namespace + $io
     text-decoration:none;
   }
 }
+
+.#{$iota-components-tabs-var-tabs}--bar {
+  list-style:none;
+  display: inline;
+  cursor: pointer;
+  padding: 0;
+  margin:0;
+
+  .#{$iota-components-tabs-var-tabs}__tab {
+    display:inline;
+    border:$iota-components-tabs-border;
+    padding:$iota-components-tabs-padding;
+    margin: 0;
+    background-color: $iota-components-tabs-background;
+    font-weight: $iota-components-tabs-font-weight;
+  }
+  .#{$iota-components-tabs-var-tabs}__tab:hover {
+    background-color:$iota-components-tabs-hover-bgcolor;
+  }
+  .#{$iota-components-tabs-var-tabs}__tab--active {
+    background-color:$iota-components-tabs-hover-bgcolor;
+  }
+}
+
+.#{$iota-components-tabs-var-tabs}__pane {
+  border:$iota-components-tabs-border;
+  margin:10px 0 0 0;
+  padding: 10px;
+}
